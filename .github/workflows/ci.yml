@@ -10,3 +10,4 @@ jobs:
           node-version: 20
       - run: npm test
       - run: python3 -m unittest test_model_client.py test_v2_runner.py
+      - run: node --input-type=module -e "import('./development/v2-integrity.mjs').then(m => m.verifyV2Freeze())"

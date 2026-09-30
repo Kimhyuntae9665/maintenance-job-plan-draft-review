@@ -1,0 +1,43 @@
+{
+  "experiment_frozen": true,
+  "version": "P09-V2-DEV-2",
+  "phase": "development",
+  "declared_commit": "09df59544a6691968dd2f9ef3075cfa251acc5d5",
+  "model_calls_at_freeze": 0,
+  "allowed_case_ids": [
+    "PM001",
+    "PM002",
+    "PM010"
+  ],
+  "challenge_labels_not_yet_authored": true,
+  "file_digests": {
+    "model_client.py": "db8d54ef356bafaa2e556c55868573fcfa9bd796063d56cd9c14173c662daf4c",
+    "packet-core.mjs": "32ff310fd6c1835e3e99bcf2c0df2e3710584e706ac53981f4c4b5044ff07f4e",
+    "artifacts/case-split.json": "e7995a2f965144e8645e633453e3026996a1fb24c0765fa958f6c5414d2de302",
+    "artifacts/v2-development/input.json": "f456e1f3f6f3b828ceff98e71d306b10d3393880979644af2453a832c90afdd7",
+    "artifacts/v2-development/policy.json": "6d3b196727764d373be95298af7e8eeb66ee79f3bfb1d1a7ac91d50dd96a8ad5",
+    "development/v2-contract.mjs": "92b875392214b6ff70fb5ca50b7bf43faaf514dfbcec0cdf80d105dfad11b2a9",
+    "development/v2-frequency-schema.json": "6b744c11d517e220da4c416cee4be94af8e82ed0ff9eb45530e0643ac77a4ae0",
+    "development/v2-prompt.txt": "7bdd532413f8bfad092f84b705104ed14610917ab0e6ed3444ad2428f2955e79",
+    "development/v2-protocol.md": "9285d829cbe9072c3c46347f1a41952a36953f0a1ae8b00a14b722d2508f116e",
+    "development/v2-grade.mjs": "88ecec4962cc0b7ba794f3d63e75cf93f99c5b0cee413acf7eeb6d8c9fde3e04",
+    "development/v2-json.mjs": "963c641eb2a38a3aaa3848f41bf05ac99e70281fe38ac9e12c359bbf1845d0ce",
+    "development/v2-backend.mjs": "a83805f6fef0b91ade849a99c53dd66af90994445eed349a1c1ab73da3d7cbc3",
+    "development/v2-input.mjs": "9f52e79bab0b88795d76a135950e7ce4080f296d445f8bcc61e92ee0afd0b232",
+    "development/v2-runner.py": "c28a0fa44eaf0055b504dffddae5f1166c907768e9b23fe838fd92726f73648b",
+    "development/v2-transport.py": "255ea2c759cf3099b98bd4c3bbd5caa6a4aa8fc65eab0f0e68a75ae49e0369d7",
+    "development/v2-freeze.mjs": "1b7d228e79f2089e1a527598f7707722aa354e12aec3aa361546328786f25220",
+    "development/v2-integrity.mjs": "f96f49edf61f5da40d36aa0da678ff51bee50375486637f08c5f6ccd2160aca8",
+    "development/v2-desk.mjs": "72643c19814baad839a858b6fe41659c2fe9b012d6ccb1b157ad2879f55ac8ed",
+    "development/v2-desk-client.mjs": "346d83b5a8d692446abf48a4bb6deb09d0b8d981893ca0c8f0dc3ef6a7b33ee7",
+    "development/v2-desk.html": "7f8cb7c0ee4de2378416838dc49cacaf7679ab176ae9781c908f5ddd1e7aef8a",
+    "development/v2-desk.css": "efc27be60f739be9757f4a05448b25e938b0e37febc629a0d7f3d41956157dca",
+    "development/labels/original-development.json": "d8a4baf1e6ac2a64f4f62099e14c04c1beb28b5fe7010de7514fe5c5b5c0b9cc",
+    "test/v2-development.test.mjs": "7351266d1beba814fa510bfeb5fc071c33bbe3d3d26da88c34fa6f7c3e896e07",
+    "test_v2_runner.py": "2cf10164a63db390c86c2eb912d27e7203f86bc3680e673f8a9639825c72e269",
+    "fixtures/original/maintenance-migration-fixtures-v1/source-manifest.json": "808edb73bdbb2eaef582791269bd09e318de65b03bbf681a77577ee33516fbd5",
+    "fixtures/original/maintenance-migration-fixtures-v1/public-output-contract.json": "ebcd497f02a83390546256678c63b79308c568f7a1681ab60df9d4652bd24b1a",
+    "fixtures/original/maintenance-migration-fixtures-v1/source-export-01.tsv": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+    "fixtures/original/maintenance-migration-fixtures-v1/source-export-02.tsv": "e63c5b2434d2ddbd7715b95108fa6a2964e0569adb67bb0013914fa0060d464a"
+  }
+}
