@@ -12,7 +12,8 @@
     "mobile_viewport": 390,
     "mobile_document_width": 390,
     "minimum_meaningful_text_px": 14,
-    "source_grid_scrolls_without_viewport_shrink": true
+    "source_grid_scrolls_without_viewport_shrink": true,
+    "empty_revision_clears_old_cells_and_current_receipt": true
   },
   "page_errors": []
 }

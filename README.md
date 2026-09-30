@@ -12,7 +12,7 @@ A CPU scaffold for reviewing fictional spreadsheet rows as structured maintenanc
 
 [CPU-only scaffold demonstration](artifacts/media/scaffold-review.mp4) · [390px source grid](artifacts/media/scaffold-mobile-390.png) · [Actual browser checks](artifacts/scaffold-browser-checks.json) · [Independent engineering review](docs/review.md)
 
-29 Node engineering tests pass. Browser checks verify exact cell navigation, repeated immutable receipts, stale two-client rejection, retained conflicts, historical review, local-only export and a 390px document width with scrollable tables and text at least 14px. [Development failures](artifacts/scaffold-browser-failures.json) and [video provenance](artifacts/scaffold-video-provenance.json) remain separate from the pending fixture evaluation. Automated demo inspections are not independent human domain adjudication.
+30 Node engineering tests pass. Browser checks verify exact cell navigation, repeated immutable receipts, stale two-client rejection, retained conflicts, historical review, local-only export, empty-revision clearing and a 390px document width with scrollable tables and text at least 14px. [Development failures](artifacts/scaffold-browser-failures.json) and [video provenance](artifacts/scaffold-video-provenance.json) remain separate from the pending fixture evaluation. Automated demo inspections are not independent human domain adjudication.
 
 ## Run
 
