@@ -71,8 +71,8 @@
     },
     {
       "path": "ui/reference-layout/style.css",
-      "sha256": "7da50146a4e446f575e14cec7fea0b9eaaf0ac8ac234253e669f299c0841d675",
-      "bytes": 4099
+      "sha256": "0bdfae22d833c90cd7c3a27f2589f1fecc414e2fbc90fc5fdf6e4aa0f2474535",
+      "bytes": 4281
     },
     {
       "path": "ui/reference-layout/server.mjs",
@@ -88,7 +88,13 @@
       "path": "test/reference-layout.test.mjs",
       "sha256": "da5b45187b4007036f0c32b3bf82d8920436d79c4688eadff39008975052e820",
       "bytes": 1112
+    },
+    {
+      "path": "capture-targeted-evidence.py",
+      "sha256": "56f7193c53f70e292910bd65c6e2280037caf465e09dcb59f4db8280907190c3",
+      "bytes": 5127
     }
   ],
-  "scope": "Versioned presentation only; original API and client, fixture, prompt, schema, model outputs and evaluator unchanged. Blocked challenge untouched."
+  "scope": "Versioned presentation only; original API and client, fixture, prompt, schema, model outputs and evaluator unchanged. Blocked challenge untouched.",
+  "targeted_capture_proof": "artifacts/ui-refit/capture-framing-checks.json"
 }

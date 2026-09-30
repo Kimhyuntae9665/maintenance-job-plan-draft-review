@@ -26,8 +26,8 @@
     },
     {
       "path": "artifacts/ui-refit/06-stored-rejection-fields.png",
-      "bytes": 162592,
-      "sha256": "1177acf30bea45373e3709c63cbb2f8e69683850d8a94899ac385a424903a8bd"
+      "bytes": 162272,
+      "sha256": "3b0098a4acdb081b9837bcd28f399c49de826a00a000712ffa3d8f294f8f1fc8"
     },
     {
       "path": "artifacts/ui-refit/10-mobile-390.png",
@@ -46,18 +46,19 @@
     },
     {
       "path": "artifacts/ui-refit/03-accepted-normalization.png",
-      "bytes": 151274,
-      "sha256": "e12b1186a6295eba5911901b13f18761b80688bc076fdce0bd24cb7b82ce9e2a"
+      "bytes": 222043,
+      "sha256": "c6b37cc4fbfe35c7c7c96b58f7c0b215d39e028e7ae9a2ff4c02fac339e8830a"
     },
     {
       "path": "artifacts/ui-refit/07-current-and-historical-revision.png",
-      "bytes": 143796,
-      "sha256": "f65cb2d65b802da5c0a91125b922c9e3fcaa540bd0e0250e01fbe0b8e5d7e751"
+      "bytes": 421984,
+      "sha256": "a5aa464c7d3802e70b633eb7b76bea1500d2ddfc9869a93619951c6dd8f72b39"
     },
     {
       "path": "artifacts/ui-refit/01-source-selection.png",
       "bytes": 139588,
       "sha256": "83a17aa3f7a508a064175dcbdd5476beaa7cc5890a71eb556e8240d7ebf004a5"
     }
-  ]
+  ],
+  "targeted_capture_proof": "artifacts/ui-refit/capture-framing-checks.json"
 }

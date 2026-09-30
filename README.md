@@ -29,7 +29,7 @@ A native source-cell grid and field comparison for fictional maintenance-registe
 기존 v1 저장 출력의 원문과 필드별 거절 근거를 함께 확인합니다. 구조·의미·백엔드 결정은 별개입니다.
 ![저장 제안 거절 근거](artifacts/ui-refit/06-stored-rejection-fields.png)
 
-새 원본 리비전을 허용하면 현재 헤더가 바뀌고 과거 모델 출력·검토·초안 확인이 현재 권한을 되살리지 않습니다.
+전체 페이지에서 현재 원본 A-demo-2와 원래 A의 과거 모델 출력·영수증을 함께 확인합니다. 과거 검토가 현재 권한을 되살리지 않습니다.
 ![현재 원본과 과거 출력](artifacts/ui-refit/07-current-and-historical-revision.png)
 
 별도 v2 저장 제안 화면은 원본 C9 셀과 미수락 원문 JSON을 나란히 보여 줍니다. 구조 적합성이 의미 정확성을 증명하지 않습니다.
@@ -41,7 +41,7 @@ A native source-cell grid and field comparison for fictional maintenance-registe
 390px에서는 두 패널을 순서대로 읽으며 한 줄 제목과 14px 이상 근거 글자를 유지합니다.
 ![390px 저장 제안](artifacts/ui-refit/10-mobile-390.png)
 
-[실제 CPU 브라우저 영상](artifacts/ui-refit/review-workflow.mp4) · [실행한 Chrome 검사](artifacts/ui-refit/browser-checks.json) · [새 미디어 SHA256·바이트 출처](artifacts/ui-refit/asset-provenance.json) · [기능 목록](docs/ui-refit-inventory.md). 브라우저 검사는 로컬 Chrome에서 실행했으며 CI에서 실행했다고 주장하지 않습니다. 기존 모델 요청·스키마·출력·평가 파일은 수정하지 않았습니다.
+[첫 refit CPU 영상 · 세 캡처 보완 전 기록](artifacts/ui-refit/review-workflow.mp4) · [실행한 Chrome 검사](artifacts/ui-refit/browser-checks.json) · [새 미디어 SHA256·바이트 출처](artifacts/ui-refit/asset-provenance.json) · [최종 UI 소스 출처](artifacts/ui-refit/preservation.json) · [세 캡처의 화면 내 근거 검사](artifacts/ui-refit/capture-framing-checks.json) · [기능 목록](docs/ui-refit-inventory.md). 브라우저 검사는 로컬 Chrome에서 실행했으며 CI에서 실행했다고 주장하지 않습니다. 기존 모델 요청·스키마·출력·평가 파일은 수정하지 않았습니다.
 
 <details><summary>이전 화면과 미디어 · historical</summary>
 

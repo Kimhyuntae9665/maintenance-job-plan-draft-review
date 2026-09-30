@@ -1,0 +1,45 @@
+{
+  "kind": "Targeted actual Chrome capture framing corrections",
+  "additional_model_calls": 0,
+  "executed_in_CI": false,
+  "accepted_receipt_fully_inside_capture": {
+    "x": 747,
+    "y": 1437,
+    "width": 492,
+    "height": 48
+  },
+  "validation_table_fully_inside_capture": {
+    "left": 747,
+    "right": 1239,
+    "top": 116,
+    "bottom": 543,
+    "parent_left": 747,
+    "parent_right": 1239,
+    "scroll_width": 492,
+    "client_width": 492
+  },
+  "historical_full_page": {
+    "current_source": "Current capture PM003 \u00b7 revision A-demo-2 \u00b7 admitted revisions: A, A-demo-2",
+    "current_acceptance": "No current acceptance for this displayed proposal.",
+    "model_status": "ARCHIVED_STALE \u00b7 Historical stored output; original source revision A; no current evidence links or acceptance authority",
+    "receipt_history": "Current normalization receipt review-1\n\nPM001 \u00b7 source revision A \u00b7 proposal r1\n\n9713344ba35d7e421af462e1af96d7da5bfc85c00fa6a869b1d5ae2840544a88\n\nHistorical normalization receipt review-2\n\nPM003 \u00b7 source revision A \u00b7 proposal r1\n\n70b5f01a88ec41deb9e01b94ac02c5db30295cadfe091bf0871abfbe5b028325",
+    "document_height": 3660
+  },
+  "mobile_390_no_horizontal_clip": true,
+  "capture_script_sha256": "56f7193c53f70e292910bd65c6e2280037caf465e09dcb59f4db8280907190c3",
+  "changed_images": [
+    "03-accepted-normalization.png",
+    "06-stored-rejection-fields.png",
+    "07-current-and-historical-revision.png"
+  ],
+  "unchanged_media_verified": [
+    "artifacts/ui-refit/05-exact-export-scope.png",
+    "artifacts/ui-refit/02-exact-source-cell.png",
+    "artifacts/ui-refit/09-v2-operating-hour.png",
+    "artifacts/ui-refit/08-v2-semantic-review.png",
+    "artifacts/ui-refit/10-mobile-390.png",
+    "artifacts/ui-refit/review-workflow.mp4",
+    "artifacts/ui-refit/04-ambiguous-trigger-blocked.png",
+    "artifacts/ui-refit/01-source-selection.png"
+  ]
+}
