@@ -1,2 +1,3 @@
 # Blank final TSV cells are deliberate original source data.
 scaffold/*.tsv -whitespace
+fixtures/original/** -whitespace

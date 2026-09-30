@@ -1,0 +1,174 @@
+{
+  "kind": "IDs and split only; no expected answers",
+  "record_count": 15,
+  "logical_row_count": 14,
+  "development_record_count": 3,
+  "evaluation_record_count": 12,
+  "cases": [
+    {
+      "case_id": "PM001",
+      "split": "development",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-01"
+      }
+    },
+    {
+      "case_id": "PM002",
+      "split": "development",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-02"
+      }
+    },
+    {
+      "case_id": "PM003",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-03"
+      }
+    },
+    {
+      "case_id": "PM004",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-04"
+      }
+    },
+    {
+      "case_id": "PM005",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-05"
+      }
+    },
+    {
+      "case_id": "PM006",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-06"
+      }
+    },
+    {
+      "case_id": "PM007",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-07"
+      }
+    },
+    {
+      "case_id": "PM008",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-08"
+      }
+    },
+    {
+      "case_id": "PM009A",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-09"
+      }
+    },
+    {
+      "case_id": "PM010",
+      "split": "development",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-10"
+      }
+    },
+    {
+      "case_id": "PM011",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-11"
+      }
+    },
+    {
+      "case_id": "PM012",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-12"
+      }
+    },
+    {
+      "case_id": "PM013",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-13"
+      }
+    },
+    {
+      "case_id": "PM014",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-14"
+      }
+    },
+    {
+      "case_id": "PM009B",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-09"
+      }
+    }
+  ]
+}

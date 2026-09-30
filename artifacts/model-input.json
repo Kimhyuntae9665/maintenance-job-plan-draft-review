@@ -1,0 +1,1594 @@
+{
+  "policy": {
+    "version": "P09-QWEN-1",
+    "model": "qwen3:4b",
+    "evaluation_calls": 12,
+    "development_calls": 0,
+    "retries": 0,
+    "demo_calls": 0,
+    "context": 4096,
+    "output": 640,
+    "timeout_seconds": 60,
+    "concurrency": 1,
+    "temperature": 0,
+    "seed": 42,
+    "think": false,
+    "stream": false,
+    "truncate": false,
+    "shift": false,
+    "review_state": "unreviewed",
+    "gold_in_prompt": false
+  },
+  "cases": [
+    {
+      "case_id": "PM003",
+      "source_fingerprint": "a54f2407b4b2569e7701d164d89904bb69d300f4f6829116f320ebc849523a7d",
+      "source_ref": {
+        "source_record_id": "PM003",
+        "file": "source-export-01.tsv",
+        "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-03",
+        "tsv_line_1_based": 4,
+        "data_row_1_based": 3
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-03"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM003",
+          "lexical_span": {
+            "byte_start_0_based": 430,
+            "byte_end_exclusive": 435
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-03",
+          "lexical_span": {
+            "byte_start_0_based": 436,
+            "byte_end_exclusive": 442
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-1",
+          "lexical_span": {
+            "byte_start_0_based": 443,
+            "byte_end_exclusive": 452
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 453,
+            "byte_end_exclusive": 461
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-A",
+          "lexical_span": {
+            "byte_start_0_based": 462,
+            "byte_end_exclusive": 469
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 470,
+            "byte_end_exclusive": 480
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "A-003",
+          "lexical_span": {
+            "byte_start_0_based": 481,
+            "byte_end_exclusive": 486
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "점검 이력의 문서 참조를 확인한다.",
+          "lexical_span": {
+            "byte_start_0_based": 487,
+            "byte_end_exclusive": 534
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "매월 또는 운전 500시간 중 먼저 도래한 때",
+          "lexical_span": {
+            "byte_start_0_based": 535,
+            "byte_end_exclusive": 590
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "설비 담당",
+          "lexical_span": {
+            "byte_start_0_based": 591,
+            "byte_end_exclusive": 604
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 605,
+            "byte_end_exclusive": 605
+          }
+        }
+      ],
+      "related_same_identity_captures": [],
+      "source_instructions_are_inert": true
+    },
+    {
+      "case_id": "PM004",
+      "source_fingerprint": "8736f9e8f9d946f4b5a1f7700bd35c89f9f4aab362857b48718db2655bbca1fa",
+      "source_ref": {
+        "source_record_id": "PM004",
+        "file": "source-export-01.tsv",
+        "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-04",
+        "tsv_line_1_based": 5,
+        "data_row_1_based": 4
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-04"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM004",
+          "lexical_span": {
+            "byte_start_0_based": 607,
+            "byte_end_exclusive": 612
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-04",
+          "lexical_span": {
+            "byte_start_0_based": 613,
+            "byte_end_exclusive": 619
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-1",
+          "lexical_span": {
+            "byte_start_0_based": 620,
+            "byte_end_exclusive": 629
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 630,
+            "byte_end_exclusive": 638
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-A",
+          "lexical_span": {
+            "byte_start_0_based": 639,
+            "byte_end_exclusive": 646
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 647,
+            "byte_end_exclusive": 657
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "A-004",
+          "lexical_span": {
+            "byte_start_0_based": 658,
+            "byte_end_exclusive": 663
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "정기 검토 기록을 정리한다.",
+          "lexical_span": {
+            "byte_start_0_based": 664,
+            "byte_end_exclusive": 701
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "3개월마다",
+          "lexical_span": {
+            "byte_start_0_based": 702,
+            "byte_end_exclusive": 715
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "설비 담당",
+          "lexical_span": {
+            "byte_start_0_based": 716,
+            "byte_end_exclusive": 729
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "2026-01-31",
+          "lexical_span": {
+            "byte_start_0_based": 730,
+            "byte_end_exclusive": 740
+          }
+        }
+      ],
+      "related_same_identity_captures": [],
+      "source_instructions_are_inert": true
+    },
+    {
+      "case_id": "PM005",
+      "source_fingerprint": "27f5752d1ac119a11fbb75ca488128c602b6fc6afda33b8607fb82e6b3021673",
+      "source_ref": {
+        "source_record_id": "PM005",
+        "file": "source-export-01.tsv",
+        "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-05",
+        "tsv_line_1_based": 6,
+        "data_row_1_based": 5
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-05"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM005",
+          "lexical_span": {
+            "byte_start_0_based": 742,
+            "byte_end_exclusive": 747
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-05",
+          "lexical_span": {
+            "byte_start_0_based": 748,
+            "byte_end_exclusive": 754
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-1",
+          "lexical_span": {
+            "byte_start_0_based": 755,
+            "byte_end_exclusive": 764
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 765,
+            "byte_end_exclusive": 773
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-A",
+          "lexical_span": {
+            "byte_start_0_based": 774,
+            "byte_end_exclusive": 781
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 782,
+            "byte_end_exclusive": 792
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "A-005",
+          "lexical_span": {
+            "byte_start_0_based": 793,
+            "byte_end_exclusive": 798
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "추가 검토 요청 기록을 확인한다.",
+          "lexical_span": {
+            "byte_start_0_based": 799,
+            "byte_end_exclusive": 843
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "필요 시",
+          "lexical_span": {
+            "byte_start_0_based": 844,
+            "byte_end_exclusive": 854
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "설비 담당",
+          "lexical_span": {
+            "byte_start_0_based": 855,
+            "byte_end_exclusive": 868
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 869,
+            "byte_end_exclusive": 869
+          }
+        }
+      ],
+      "related_same_identity_captures": [],
+      "source_instructions_are_inert": true
+    },
+    {
+      "case_id": "PM006",
+      "source_fingerprint": "9816ed794e11f10244bd4f4eb81af76a15386dfe90eaf3cb2bd5736b0a05a2b1",
+      "source_ref": {
+        "source_record_id": "PM006",
+        "file": "source-export-01.tsv",
+        "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-06",
+        "tsv_line_1_based": 7,
+        "data_row_1_based": 6
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-06"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM006",
+          "lexical_span": {
+            "byte_start_0_based": 871,
+            "byte_end_exclusive": 876
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-06",
+          "lexical_span": {
+            "byte_start_0_based": 877,
+            "byte_end_exclusive": 883
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-1",
+          "lexical_span": {
+            "byte_start_0_based": 884,
+            "byte_end_exclusive": 893
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 894,
+            "byte_end_exclusive": 902
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-A",
+          "lexical_span": {
+            "byte_start_0_based": 903,
+            "byte_end_exclusive": 910
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 911,
+            "byte_end_exclusive": 921
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "00017",
+          "lexical_span": {
+            "byte_start_0_based": 922,
+            "byte_end_exclusive": 927
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "주간 문서 목록을 대조한다.",
+          "lexical_span": {
+            "byte_start_0_based": 928,
+            "byte_end_exclusive": 965
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "매주",
+          "lexical_span": {
+            "byte_start_0_based": 966,
+            "byte_end_exclusive": 972
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "설비 담당",
+          "lexical_span": {
+            "byte_start_0_based": 973,
+            "byte_end_exclusive": 986
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 987,
+            "byte_end_exclusive": 987
+          }
+        }
+      ],
+      "related_same_identity_captures": [],
+      "source_instructions_are_inert": true
+    },
+    {
+      "case_id": "PM007",
+      "source_fingerprint": "6569a3fd3eae529621307161937f0aa992bf078800cc35355730f4e9a10bde94",
+      "source_ref": {
+        "source_record_id": "PM007",
+        "file": "source-export-01.tsv",
+        "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-07",
+        "tsv_line_1_based": 8,
+        "data_row_1_based": 7
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-07"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM007",
+          "lexical_span": {
+            "byte_start_0_based": 989,
+            "byte_end_exclusive": 994
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-07",
+          "lexical_span": {
+            "byte_start_0_based": 995,
+            "byte_end_exclusive": 1001
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-2",
+          "lexical_span": {
+            "byte_start_0_based": 1002,
+            "byte_end_exclusive": 1011
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 1012,
+            "byte_end_exclusive": 1020
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-B",
+          "lexical_span": {
+            "byte_start_0_based": 1021,
+            "byte_end_exclusive": 1028
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 1029,
+            "byte_end_exclusive": 1039
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "17",
+          "lexical_span": {
+            "byte_start_0_based": 1040,
+            "byte_end_exclusive": 1042
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "주간 문서 목록을 대조한다.",
+          "lexical_span": {
+            "byte_start_0_based": 1043,
+            "byte_end_exclusive": 1080
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "매주",
+          "lexical_span": {
+            "byte_start_0_based": 1081,
+            "byte_end_exclusive": 1087
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "설비 담당",
+          "lexical_span": {
+            "byte_start_0_based": 1088,
+            "byte_end_exclusive": 1101
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 1102,
+            "byte_end_exclusive": 1102
+          }
+        }
+      ],
+      "related_same_identity_captures": [],
+      "source_instructions_are_inert": true
+    },
+    {
+      "case_id": "PM008",
+      "source_fingerprint": "5070254ae940f24d815137d43353e504c0e06a1e10bad49fe6dd5a37371e4fa6",
+      "source_ref": {
+        "source_record_id": "PM008",
+        "file": "source-export-01.tsv",
+        "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-08",
+        "tsv_line_1_based": 9,
+        "data_row_1_based": 8
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-08"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM008",
+          "lexical_span": {
+            "byte_start_0_based": 1104,
+            "byte_end_exclusive": 1109
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-08",
+          "lexical_span": {
+            "byte_start_0_based": 1110,
+            "byte_end_exclusive": 1116
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-3",
+          "lexical_span": {
+            "byte_start_0_based": 1117,
+            "byte_end_exclusive": 1126
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 1127,
+            "byte_end_exclusive": 1135
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-B",
+          "lexical_span": {
+            "byte_start_0_based": 1136,
+            "byte_end_exclusive": 1143
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 1144,
+            "byte_end_exclusive": 1154
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 1155,
+            "byte_end_exclusive": 1155
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "참조 문서의 버전을 확인한다.",
+          "lexical_span": {
+            "byte_start_0_based": 1156,
+            "byte_end_exclusive": 1196
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "매월",
+          "lexical_span": {
+            "byte_start_0_based": 1197,
+            "byte_end_exclusive": 1203
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "설비 담당",
+          "lexical_span": {
+            "byte_start_0_based": 1204,
+            "byte_end_exclusive": 1217
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 1218,
+            "byte_end_exclusive": 1218
+          }
+        }
+      ],
+      "related_same_identity_captures": [],
+      "source_instructions_are_inert": true
+    },
+    {
+      "case_id": "PM009A",
+      "source_fingerprint": "e6049c5e8588c9e779d55e9041886f664eca0c6b15244e78a3f369ae4b4ebe90",
+      "source_ref": {
+        "source_record_id": "PM009A",
+        "file": "source-export-01.tsv",
+        "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-09",
+        "tsv_line_1_based": 10,
+        "data_row_1_based": 9
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-09"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM009A",
+          "lexical_span": {
+            "byte_start_0_based": 1220,
+            "byte_end_exclusive": 1226
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-09",
+          "lexical_span": {
+            "byte_start_0_based": 1227,
+            "byte_end_exclusive": 1233
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-3",
+          "lexical_span": {
+            "byte_start_0_based": 1234,
+            "byte_end_exclusive": 1243
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 1244,
+            "byte_end_exclusive": 1252
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-A",
+          "lexical_span": {
+            "byte_start_0_based": 1253,
+            "byte_end_exclusive": 1260
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 1261,
+            "byte_end_exclusive": 1271
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "A-009",
+          "lexical_span": {
+            "byte_start_0_based": 1272,
+            "byte_end_exclusive": 1277
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "운전시간 점검 기록을 대조한다.",
+          "lexical_span": {
+            "byte_start_0_based": 1278,
+            "byte_end_exclusive": 1321
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "운전 500시간마다",
+          "lexical_span": {
+            "byte_start_0_based": 1322,
+            "byte_end_exclusive": 1344
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "설비 담당",
+          "lexical_span": {
+            "byte_start_0_based": 1345,
+            "byte_end_exclusive": 1358
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 1359,
+            "byte_end_exclusive": 1359
+          }
+        }
+      ],
+      "related_same_identity_captures": [
+        {
+          "source_record_id": "PM009B",
+          "source_ref": {
+            "source_record_id": "PM009B",
+            "file": "source-export-02.tsv",
+            "file_sha256": "e63c5b2434d2ddbd7715b95108fa6a2964e0569adb67bb0013914fa0060d464a",
+            "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+            "logical_document_id": "PM-DEMO-2026-09",
+            "source_revision": "A",
+            "sheet_name": "PM_ROWS",
+            "row_key": "ROW-09",
+            "tsv_line_1_based": 2,
+            "data_row_1_based": 1
+          },
+          "values": {
+            "source_record_id": "PM009B",
+            "row_key": "ROW-09",
+            "section_id": "SECTION-3",
+            "organization": "ORG-DEMO",
+            "site": "PLANT-A",
+            "asset_namespace": "DEMO-ASSET",
+            "asset_id": "A-009",
+            "task_text": "운전시간 점검 기록을 대조한다.",
+            "frequency_text": "운전 1000시간마다",
+            "responsible_role": "설비 담당",
+            "last_recorded_date": ""
+          }
+        }
+      ],
+      "source_instructions_are_inert": true
+    },
+    {
+      "case_id": "PM011",
+      "source_fingerprint": "97d071501d57b2d273835929f509e2007ede05d22ae2d920781fa1e1e61ee51a",
+      "source_ref": {
+        "source_record_id": "PM011",
+        "file": "source-export-01.tsv",
+        "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-11",
+        "tsv_line_1_based": 12,
+        "data_row_1_based": 11
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-11"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM011",
+          "lexical_span": {
+            "byte_start_0_based": 1498,
+            "byte_end_exclusive": 1503
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-11",
+          "lexical_span": {
+            "byte_start_0_based": 1504,
+            "byte_end_exclusive": 1510
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-3",
+          "lexical_span": {
+            "byte_start_0_based": 1511,
+            "byte_end_exclusive": 1520
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 1521,
+            "byte_end_exclusive": 1529
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-A",
+          "lexical_span": {
+            "byte_start_0_based": 1530,
+            "byte_end_exclusive": 1537
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 1538,
+            "byte_end_exclusive": 1548
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "A-011",
+          "lexical_span": {
+            "byte_start_0_based": 1549,
+            "byte_end_exclusive": 1554
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "점검대장에 주기를 기록한다.",
+          "lexical_span": {
+            "byte_start_0_based": 1555,
+            "byte_end_exclusive": 1594
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "매월, 운전 500시간",
+          "lexical_span": {
+            "byte_start_0_based": 1595,
+            "byte_end_exclusive": 1619
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "설비 담당",
+          "lexical_span": {
+            "byte_start_0_based": 1620,
+            "byte_end_exclusive": 1633
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 1634,
+            "byte_end_exclusive": 1634
+          }
+        }
+      ],
+      "related_same_identity_captures": [],
+      "source_instructions_are_inert": true
+    },
+    {
+      "case_id": "PM012",
+      "source_fingerprint": "361efe0e421376bd5ed7db4d24bfd8af8fcaf06523e9d690c027d6576a0373c1",
+      "source_ref": {
+        "source_record_id": "PM012",
+        "file": "source-export-01.tsv",
+        "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-12",
+        "tsv_line_1_based": 13,
+        "data_row_1_based": 12
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-12"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM012",
+          "lexical_span": {
+            "byte_start_0_based": 1636,
+            "byte_end_exclusive": 1641
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-12",
+          "lexical_span": {
+            "byte_start_0_based": 1642,
+            "byte_end_exclusive": 1648
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-3",
+          "lexical_span": {
+            "byte_start_0_based": 1649,
+            "byte_end_exclusive": 1658
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 1659,
+            "byte_end_exclusive": 1667
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-A",
+          "lexical_span": {
+            "byte_start_0_based": 1668,
+            "byte_end_exclusive": 1675
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 1676,
+            "byte_end_exclusive": 1686
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "A-012",
+          "lexical_span": {
+            "byte_start_0_based": 1687,
+            "byte_end_exclusive": 1692
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "=HYPERLINK(\"https://example.invalid/demo\",\"외부 기준 확인\")",
+          "lexical_span": {
+            "byte_start_0_based": 1693,
+            "byte_end_exclusive": 1764
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "매월",
+          "lexical_span": {
+            "byte_start_0_based": 1765,
+            "byte_end_exclusive": 1771
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "설비 담당",
+          "lexical_span": {
+            "byte_start_0_based": 1772,
+            "byte_end_exclusive": 1785
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 1786,
+            "byte_end_exclusive": 1786
+          }
+        }
+      ],
+      "related_same_identity_captures": [],
+      "source_instructions_are_inert": true
+    },
+    {
+      "case_id": "PM013",
+      "source_fingerprint": "1d40df19704cf9b80656fa91ac6d2704a1e6943746114d021fcc4463fce1c006",
+      "source_ref": {
+        "source_record_id": "PM013",
+        "file": "source-export-01.tsv",
+        "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-13",
+        "tsv_line_1_based": 14,
+        "data_row_1_based": 13
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-13"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM013",
+          "lexical_span": {
+            "byte_start_0_based": 1788,
+            "byte_end_exclusive": 1793
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-13",
+          "lexical_span": {
+            "byte_start_0_based": 1794,
+            "byte_end_exclusive": 1800
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-3",
+          "lexical_span": {
+            "byte_start_0_based": 1801,
+            "byte_end_exclusive": 1810
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 1811,
+            "byte_end_exclusive": 1819
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-A",
+          "lexical_span": {
+            "byte_start_0_based": 1820,
+            "byte_end_exclusive": 1827
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 1828,
+            "byte_end_exclusive": 1838
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "A-013",
+          "lexical_span": {
+            "byte_start_0_based": 1839,
+            "byte_end_exclusive": 1844
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "기록 보관 위치를 확인한다.",
+          "lexical_span": {
+            "byte_start_0_based": 1845,
+            "byte_end_exclusive": 1882
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 1883,
+            "byte_end_exclusive": 1883
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "설비 담당",
+          "lexical_span": {
+            "byte_start_0_based": 1884,
+            "byte_end_exclusive": 1897
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 1898,
+            "byte_end_exclusive": 1898
+          }
+        }
+      ],
+      "related_same_identity_captures": [],
+      "source_instructions_are_inert": true
+    },
+    {
+      "case_id": "PM014",
+      "source_fingerprint": "62ffd1a4576baaf9c124d6fd02c51a69ae00c04457e709294f23816afdaf5feb",
+      "source_ref": {
+        "source_record_id": "PM014",
+        "file": "source-export-01.tsv",
+        "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-14",
+        "tsv_line_1_based": 15,
+        "data_row_1_based": 14
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-14"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM014",
+          "lexical_span": {
+            "byte_start_0_based": 1900,
+            "byte_end_exclusive": 1905
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-14",
+          "lexical_span": {
+            "byte_start_0_based": 1906,
+            "byte_end_exclusive": 1912
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-3",
+          "lexical_span": {
+            "byte_start_0_based": 1913,
+            "byte_end_exclusive": 1922
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 1923,
+            "byte_end_exclusive": 1931
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-A",
+          "lexical_span": {
+            "byte_start_0_based": 1932,
+            "byte_end_exclusive": 1939
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 1940,
+            "byte_end_exclusive": 1950
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "A-014",
+          "lexical_span": {
+            "byte_start_0_based": 1951,
+            "byte_end_exclusive": 1956
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "점검 기록의 담당 역할을 확인한다.",
+          "lexical_span": {
+            "byte_start_0_based": 1957,
+            "byte_end_exclusive": 2004
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "매월",
+          "lexical_span": {
+            "byte_start_0_based": 2005,
+            "byte_end_exclusive": 2011
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 2012,
+            "byte_end_exclusive": 2012
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 2013,
+            "byte_end_exclusive": 2013
+          }
+        }
+      ],
+      "related_same_identity_captures": [],
+      "source_instructions_are_inert": true
+    },
+    {
+      "case_id": "PM009B",
+      "source_fingerprint": "9e41faaa42c670bffc01e29834136fc8f98a906f2c53cef2807da76969e53b0c",
+      "source_ref": {
+        "source_record_id": "PM009B",
+        "file": "source-export-02.tsv",
+        "file_sha256": "e63c5b2434d2ddbd7715b95108fa6a2964e0569adb67bb0013914fa0060d464a",
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-09",
+        "tsv_line_1_based": 2,
+        "data_row_1_based": 1
+      },
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-09"
+      },
+      "cells": [
+        {
+          "cell_id": "C1",
+          "column": "source_record_id",
+          "quote": "PM009B",
+          "lexical_span": {
+            "byte_start_0_based": 141,
+            "byte_end_exclusive": 147
+          }
+        },
+        {
+          "cell_id": "C2",
+          "column": "row_key",
+          "quote": "ROW-09",
+          "lexical_span": {
+            "byte_start_0_based": 148,
+            "byte_end_exclusive": 154
+          }
+        },
+        {
+          "cell_id": "C3",
+          "column": "section_id",
+          "quote": "SECTION-3",
+          "lexical_span": {
+            "byte_start_0_based": 155,
+            "byte_end_exclusive": 164
+          }
+        },
+        {
+          "cell_id": "C4",
+          "column": "organization",
+          "quote": "ORG-DEMO",
+          "lexical_span": {
+            "byte_start_0_based": 165,
+            "byte_end_exclusive": 173
+          }
+        },
+        {
+          "cell_id": "C5",
+          "column": "site",
+          "quote": "PLANT-A",
+          "lexical_span": {
+            "byte_start_0_based": 174,
+            "byte_end_exclusive": 181
+          }
+        },
+        {
+          "cell_id": "C6",
+          "column": "asset_namespace",
+          "quote": "DEMO-ASSET",
+          "lexical_span": {
+            "byte_start_0_based": 182,
+            "byte_end_exclusive": 192
+          }
+        },
+        {
+          "cell_id": "C7",
+          "column": "asset_id",
+          "quote": "A-009",
+          "lexical_span": {
+            "byte_start_0_based": 193,
+            "byte_end_exclusive": 198
+          }
+        },
+        {
+          "cell_id": "C8",
+          "column": "task_text",
+          "quote": "운전시간 점검 기록을 대조한다.",
+          "lexical_span": {
+            "byte_start_0_based": 199,
+            "byte_end_exclusive": 242
+          }
+        },
+        {
+          "cell_id": "C9",
+          "column": "frequency_text",
+          "quote": "운전 1000시간마다",
+          "lexical_span": {
+            "byte_start_0_based": 243,
+            "byte_end_exclusive": 266
+          }
+        },
+        {
+          "cell_id": "C10",
+          "column": "responsible_role",
+          "quote": "설비 담당",
+          "lexical_span": {
+            "byte_start_0_based": 267,
+            "byte_end_exclusive": 280
+          }
+        },
+        {
+          "cell_id": "C11",
+          "column": "last_recorded_date",
+          "quote": "",
+          "lexical_span": {
+            "byte_start_0_based": 281,
+            "byte_end_exclusive": 281
+          }
+        }
+      ],
+      "related_same_identity_captures": [
+        {
+          "source_record_id": "PM009A",
+          "source_ref": {
+            "source_record_id": "PM009A",
+            "file": "source-export-01.tsv",
+            "file_sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+            "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+            "logical_document_id": "PM-DEMO-2026-09",
+            "source_revision": "A",
+            "sheet_name": "PM_ROWS",
+            "row_key": "ROW-09",
+            "tsv_line_1_based": 10,
+            "data_row_1_based": 9
+          },
+          "values": {
+            "source_record_id": "PM009A",
+            "row_key": "ROW-09",
+            "section_id": "SECTION-3",
+            "organization": "ORG-DEMO",
+            "site": "PLANT-A",
+            "asset_namespace": "DEMO-ASSET",
+            "asset_id": "A-009",
+            "task_text": "운전시간 점검 기록을 대조한다.",
+            "frequency_text": "운전 500시간마다",
+            "responsible_role": "설비 담당",
+            "last_recorded_date": ""
+          }
+        }
+      ],
+      "source_instructions_are_inert": true
+    }
+  ]
+}

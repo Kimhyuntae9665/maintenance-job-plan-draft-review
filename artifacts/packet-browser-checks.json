@@ -1,0 +1,23 @@
+{
+  "kind": "Actual installed Chrome CPU workflow regressions, not extraction evaluation",
+  "model_calls": 0,
+  "checks": {
+    "tab_enter_open_focus_restored": true,
+    "exact_cell_keyboard_destination": true,
+    "review_keyboard_focus_restored": true,
+    "repeated_review_idempotent": true,
+    "exact_one_row_draft_with_cell_evidence_not_import": true,
+    "filter_removes_hidden_export_scope": true,
+    "two_client_changed_proposal_rejected_no_reacceptance": true,
+    "delayed_response_preserves_later_explicit_focus": true,
+    "changed_row_clears_cached_cell_evidence": true,
+    "failed_request_retains_keyboard_destination": true,
+    "mobile": {
+      "viewport": 390,
+      "document_width": 390,
+      "minimum_meaningful_text_px": 14,
+      "native_scrollable_grid": true
+    }
+  },
+  "page_errors": []
+}

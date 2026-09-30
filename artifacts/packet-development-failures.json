@@ -1,0 +1,10 @@
+{
+  "kind": "Preserved CPU development findings; not evaluation results",
+  "model_calls": 0,
+  "findings": [
+    {"id":"historical-acceptance-resurrection","method":"Independent synthetic B/monthly -> accept -> C/weekly -> B/monthly server reproduction","observed":"Old deterministic receipt became current without fresh review","repair":"Source admission generation participates in proposal hash; superseded receipts stay historical"},
+    {"id":"missing-export-cell-evidence","method":"Independent synthetic export inspection","observed":"Export contained row hash/reference but omitted cell evidence and review timestamp","repair":"Receipt and exported row include exact cell evidence; receipt includes reviewed_at"},
+    {"id":"delayed-focus-test-hidden-destination","method":"Actual Chrome controlled delayed response","observed":"Test attempted to focus a pre inside closed details; focus assertion failed","repair":"Test uses a visible scrollable grid as later explicit focus destination; application also preserves an already-focused details destination while clearing stale evidence"},
+    {"id":"returned-then-accepted-display","method":"Independent synthetic return then accept reproduction","observed":"Main status still showed returned despite a current acceptance receipt","repair":"Main status gives current exact-proposal receipt priority"}
+  ]
+}
