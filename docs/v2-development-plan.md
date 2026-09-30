@@ -1,4 +1,6 @@
-# Proposed v2: development-only typed schema and abstention
+# Historical inactive v2 proposal
+
+This earlier design is superseded by [P09-V2-DEV-2](../development/v2-protocol.md), which separates structural/source-span safety from independently labeled semantic grading. The historical grammar gate described below is not used in the current v2 development path.
 
 **Status: CPU proposal/checks only; no v2 model calls or evaluation.** V1's twelve attempts, prompt/schema, input, original gold and reports remain unchanged. The original evaluation cases are now exposed and must never be presented as a fresh held-out set. A genuinely separate future test packet and frozen experiment are needed before any new evaluation claim.
 

@@ -1,0 +1,29 @@
+{
+  "version": "P09-V2-DEV-2",
+  "phase": "development",
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.17.7",
+  "allowed_case_ids": [
+    "PM001",
+    "PM002",
+    "PM010"
+  ],
+  "initial_batches": 1,
+  "max_http_calls": 3,
+  "retries": 0,
+  "demo_inference": 0,
+  "context": 4096,
+  "output": 640,
+  "timeout_seconds": 60,
+  "concurrency": 1,
+  "temperature": 0,
+  "seed": 42,
+  "think": false,
+  "stream": false,
+  "truncate": false,
+  "shift": false,
+  "max_frequency_codepoints": 512,
+  "semantic_authority": "independent labels for grading; explicit human review for live suggestions",
+  "v1_evaluation_reuse": false
+}

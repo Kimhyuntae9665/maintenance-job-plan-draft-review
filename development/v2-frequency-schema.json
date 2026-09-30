@@ -1,6 +1,177 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "P09 development-only frequency proposal or abstention",
+  "title": "P09-V2-DEV-2 typed frequency proposal or abstention",
+  "definitions": {
+    "calendar": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "calendar_interval"
+        },
+        "value": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "unit": {
+          "enum": [
+            "day",
+            "week",
+            "month",
+            "year"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "value",
+        "unit"
+      ]
+    },
+    "rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "calendar_rule"
+        },
+        "rule": {
+          "const": "day_of_month"
+        },
+        "day": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 31
+        }
+      },
+      "required": [
+        "kind",
+        "rule",
+        "day"
+      ]
+    },
+    "meter": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "meter_interval"
+        },
+        "value": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "unit": {
+          "const": "hour"
+        },
+        "basis": {
+          "const": "operating_runtime"
+        }
+      },
+      "required": [
+        "kind",
+        "value",
+        "unit",
+        "basis"
+      ]
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "event_trigger"
+        },
+        "event": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        }
+      },
+      "required": [
+        "kind",
+        "event"
+      ]
+    },
+    "combined": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "combined"
+        },
+        "relation": {
+          "const": "whichever_first"
+        },
+        "triggers": {
+          "type": "array",
+          "items": [
+            {
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/calendar"
+                },
+                {
+                  "$ref": "#/definitions/rule"
+                }
+              ]
+            },
+            {
+              "$ref": "#/definitions/meter"
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2,
+          "additionalItems": false
+        }
+      },
+      "required": [
+        "kind",
+        "relation",
+        "triggers"
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cell_id": {
+          "const": "C9"
+        },
+        "quote": {
+          "type": "string",
+          "maxLength": 512
+        },
+        "span": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "start": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "end": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "start",
+            "end"
+          ]
+        }
+      },
+      "required": [
+        "cell_id",
+        "quote",
+        "span"
+      ]
+    }
+  },
   "oneOf": [
     {
       "type": "object",
@@ -12,23 +183,10 @@
         },
         "source_fingerprint": {
           "type": "string",
-          "minLength": 1
+          "pattern": "^[a-f0-9]{64}$"
         },
         "evidence": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "cell_id": {
-              "const": "C9"
-            },
-            "quote": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "cell_id",
-            "quote"
-          ]
+          "$ref": "#/definitions/evidence"
         },
         "decision": {
           "const": "propose"
@@ -36,179 +194,19 @@
         "frequency": {
           "oneOf": [
             {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "kind": {
-                  "const": "calendar_interval"
-                },
-                "value": {
-                  "type": "integer",
-                  "minimum": 1,
-                  "maximum": 9007199254740991
-                },
-                "unit": {
-                  "enum": [
-                    "month",
-                    "week"
-                  ]
-                }
-              },
-              "required": [
-                "kind",
-                "value",
-                "unit"
-              ]
+              "$ref": "#/definitions/calendar"
             },
             {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "kind": {
-                  "const": "calendar_rule"
-                },
-                "rule": {
-                  "const": "day_of_month"
-                },
-                "day": {
-                  "type": "integer",
-                  "minimum": 1,
-                  "maximum": 31
-                }
-              },
-              "required": [
-                "kind",
-                "rule",
-                "day"
-              ]
+              "$ref": "#/definitions/rule"
             },
             {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "kind": {
-                  "const": "meter_interval"
-                },
-                "value": {
-                  "type": "integer",
-                  "minimum": 1,
-                  "maximum": 9007199254740991
-                },
-                "unit": {
-                  "const": "hour"
-                },
-                "basis": {
-                  "const": "operating_runtime"
-                }
-              },
-              "required": [
-                "kind",
-                "value",
-                "unit",
-                "basis"
-              ]
+              "$ref": "#/definitions/meter"
             },
             {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "kind": {
-                  "const": "combined"
-                },
-                "relation": {
-                  "const": "whichever_first"
-                },
-                "triggers": {
-                  "type": "array",
-                  "items": [
-                    {
-                      "oneOf": [
-                        {
-                          "type": "object",
-                          "additionalProperties": false,
-                          "properties": {
-                            "kind": {
-                              "const": "calendar_interval"
-                            },
-                            "value": {
-                              "type": "integer",
-                              "minimum": 1,
-                              "maximum": 9007199254740991
-                            },
-                            "unit": {
-                              "enum": [
-                                "month",
-                                "week"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "kind",
-                            "value",
-                            "unit"
-                          ]
-                        },
-                        {
-                          "type": "object",
-                          "additionalProperties": false,
-                          "properties": {
-                            "kind": {
-                              "const": "calendar_rule"
-                            },
-                            "rule": {
-                              "const": "day_of_month"
-                            },
-                            "day": {
-                              "type": "integer",
-                              "minimum": 1,
-                              "maximum": 31
-                            }
-                          },
-                          "required": [
-                            "kind",
-                            "rule",
-                            "day"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "object",
-                      "additionalProperties": false,
-                      "properties": {
-                        "kind": {
-                          "const": "meter_interval"
-                        },
-                        "value": {
-                          "type": "integer",
-                          "minimum": 1,
-                          "maximum": 9007199254740991
-                        },
-                        "unit": {
-                          "const": "hour"
-                        },
-                        "basis": {
-                          "const": "operating_runtime"
-                        }
-                      },
-                      "required": [
-                        "kind",
-                        "value",
-                        "unit",
-                        "basis"
-                      ]
-                    }
-                  ],
-                  "minItems": 2,
-                  "maxItems": 2,
-                  "additionalItems": false
-                }
-              },
-              "required": [
-                "kind",
-                "relation",
-                "triggers"
-              ]
+              "$ref": "#/definitions/combined"
+            },
+            {
+              "$ref": "#/definitions/event"
             }
           ]
         }
@@ -231,23 +229,10 @@
         },
         "source_fingerprint": {
           "type": "string",
-          "minLength": 1
+          "pattern": "^[a-f0-9]{64}$"
         },
         "evidence": {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "cell_id": {
-              "const": "C9"
-            },
-            "quote": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "cell_id",
-            "quote"
-          ]
+          "$ref": "#/definitions/evidence"
         },
         "decision": {
           "const": "abstain"
@@ -258,9 +243,11 @@
         "reason": {
           "enum": [
             "missing_frequency",
-            "unsupported_frequency",
+            "unsupported_semantics",
             "unspecified_event",
-            "unspecified_relation"
+            "unspecified_relation",
+            "unspecified_meter_basis",
+            "unsupported_precision"
           ]
         }
       },

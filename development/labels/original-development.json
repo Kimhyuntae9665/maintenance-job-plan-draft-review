@@ -1,0 +1,37 @@
+{
+  "provenance": "Original packet author development labels; evaluator-only, no v1 evaluation labels included",
+  "source_gold_sha256": "9b8011f677a742ce668091f1fb333263238a04d697c2559421b84f8411569cec",
+  "cases": [
+    {
+      "case_id": "PM001",
+      "expected_decision": "propose",
+      "frequency": {
+        "kind": "calendar_rule",
+        "rule": "day_of_month",
+        "day": 1
+      },
+      "acceptable_frequencies": []
+    },
+    {
+      "case_id": "PM002",
+      "expected_decision": "propose",
+      "frequency": {
+        "kind": "meter_interval",
+        "value": 500,
+        "unit": "hour",
+        "basis": "operating_runtime"
+      },
+      "acceptable_frequencies": []
+    },
+    {
+      "case_id": "PM010",
+      "expected_decision": "propose",
+      "frequency": {
+        "kind": "calendar_interval",
+        "value": 1,
+        "unit": "month"
+      },
+      "acceptable_frequencies": []
+    }
+  ]
+}

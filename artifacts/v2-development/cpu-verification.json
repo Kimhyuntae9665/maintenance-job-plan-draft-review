@@ -1,0 +1,9 @@
+{
+  "kind": "CPU-only readiness verification, not model results",
+  "model_calls": 0,
+  "v1_methods_inputs_attempts_results_unchanged": true,
+  "original_bundle_files_verified": 12,
+  "schema_meta_validation": "not available, no installation",
+  "node_tests": 97,
+  "linux_cpu_mock_tests": 11
+}

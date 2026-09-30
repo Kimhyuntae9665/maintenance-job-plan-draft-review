@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P09 v2 development desk</title><link rel="stylesheet" href="/v2-desk.css"><body><main>
+<h1>Frequency proposals · v2 development</h1><p>Source-only inputs: PM001, PM002, PM010. Stored raw outputs only. This desk makes no model calls and collects no acceptance or import authorization.</p>
+<nav aria-label="Original development captures"><button data-id="PM001">PM001</button><button data-id="PM002">PM002</button><button data-id="PM010">PM010</button></nav>
+<p id="status" role="status" aria-live="polite">Choose a development capture.</p>
+<section id="panel" aria-label="Source and proposal comparison" hidden><h2 id="case-title"></h2><div class="comparison">
+<section><h3>Immutable C9 source</h3><blockquote id="quote"></blockquote><pre id="locator"></pre></section>
+<section><h3>Raw model proposal</h3><p id="state"></p><p>Structural validity checks required types and exact source bindings. A person must judge semantic meaning. No correctness claim follows from this state.</p><pre id="raw"></pre></section></div>
+<section><h3>Deterministic source enrichment</h3><p>Literal copies and source blockers belong to the backend. They do not repair the model frequency or establish its meaning.</p><pre id="backend"></pre></section></section>
+</main><script type="module" src="/v2-desk-client.mjs"></script></body></html>

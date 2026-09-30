@@ -1,1 +1,15 @@
-{"name":"maintenance-job-plan-draft","version":"0.2.0","private":true,"type":"module","scripts":{"start":"node packet-server.mjs","test":"node --test test/*.test.mjs"},"engines":{"node":">=20"}}
+{
+  "name": "maintenance-job-plan-draft",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node packet-server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "v2:desk": "node development/v2-desk.mjs",
+    "v2:score": "node development/v2-grade.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
