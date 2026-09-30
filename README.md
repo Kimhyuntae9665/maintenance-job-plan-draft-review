@@ -28,7 +28,9 @@ All model transports completed with `done:true` / `stop`, and all twelve content
 
 [Baseline results](artifacts/packet-baseline-evaluation.json) · [Raw model results](artifacts/packet-model-evaluation.json) · [All preserved attempts](artifacts/model-attempts) · [Frozen method and limits](docs/experiment.md) · [Completion / safe runtime release](artifacts/runtime-completion.json). The separate development baseline scored 21/21 literal fields and 3/3 frequencies; no development model calls ran. The prototype supports this packet's narrow grammar, not general maintenance extraction, scheduling readiness or measured business savings.
 
-79 Node engineering tests and four Linux CPU transport mocks pass. Actual Chrome checks cover keyboard/focus, delayed/failing requests, stale two-client decisions, repeated receipts, exact export scope after filtering, stored-model rejection and 390px readability. [Stored-output replay checks](artifacts/stored-model-browser-checks.json) and [video provenance](artifacts/packet-video-provenance.json) distinguish CPU media and automated fictional inspections from inference and human domain adjudication.
+88 Node engineering tests and four Linux CPU transport mocks pass, including nine isolated v2 development-contract checks. Actual Chrome checks cover keyboard/focus, delayed/failing requests, stale two-client decisions, repeated receipts, exact export scope after filtering, stored-model rejection and 390px readability. [Stored-output replay checks](artifacts/stored-model-browser-checks.json) and [video provenance](artifacts/packet-video-provenance.json) distinguish CPU media and automated fictional inspections from inference and human domain adjudication.
+
+[Proposed v2 development-only repair](docs/v2-development-plan.md) adds required typed frequency fields, explicit abstention and separate shape/evidence/grammar checks. It is not activated in this runtime and has zero model calls. V1 remains unchanged; its twelve exposed cases cannot become fresh held-out evidence. Any future evaluation needs a genuinely separate frozen test packet.
 
 ## Run
 

@@ -1,0 +1,277 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "P09 development-only frequency proposal or abstention",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_fingerprint": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "cell_id": {
+              "const": "C9"
+            },
+            "quote": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "cell_id",
+            "quote"
+          ]
+        },
+        "decision": {
+          "const": "propose"
+        },
+        "frequency": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "kind": {
+                  "const": "calendar_interval"
+                },
+                "value": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                },
+                "unit": {
+                  "enum": [
+                    "month",
+                    "week"
+                  ]
+                }
+              },
+              "required": [
+                "kind",
+                "value",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "kind": {
+                  "const": "calendar_rule"
+                },
+                "rule": {
+                  "const": "day_of_month"
+                },
+                "day": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 31
+                }
+              },
+              "required": [
+                "kind",
+                "rule",
+                "day"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "kind": {
+                  "const": "meter_interval"
+                },
+                "value": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                },
+                "unit": {
+                  "const": "hour"
+                },
+                "basis": {
+                  "const": "operating_runtime"
+                }
+              },
+              "required": [
+                "kind",
+                "value",
+                "unit",
+                "basis"
+              ]
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "kind": {
+                  "const": "combined"
+                },
+                "relation": {
+                  "const": "whichever_first"
+                },
+                "triggers": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "oneOf": [
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "kind": {
+                              "const": "calendar_interval"
+                            },
+                            "value": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "maximum": 9007199254740991
+                            },
+                            "unit": {
+                              "enum": [
+                                "month",
+                                "week"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "kind",
+                            "value",
+                            "unit"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "properties": {
+                            "kind": {
+                              "const": "calendar_rule"
+                            },
+                            "rule": {
+                              "const": "day_of_month"
+                            },
+                            "day": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "maximum": 31
+                            }
+                          },
+                          "required": [
+                            "kind",
+                            "rule",
+                            "day"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "kind": {
+                          "const": "meter_interval"
+                        },
+                        "value": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 9007199254740991
+                        },
+                        "unit": {
+                          "const": "hour"
+                        },
+                        "basis": {
+                          "const": "operating_runtime"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "value",
+                        "unit",
+                        "basis"
+                      ]
+                    }
+                  ],
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "additionalItems": false
+                }
+              },
+              "required": [
+                "kind",
+                "relation",
+                "triggers"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "source_record_id",
+        "source_fingerprint",
+        "evidence",
+        "decision",
+        "frequency"
+      ]
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_fingerprint": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "cell_id": {
+              "const": "C9"
+            },
+            "quote": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "cell_id",
+            "quote"
+          ]
+        },
+        "decision": {
+          "const": "abstain"
+        },
+        "frequency": {
+          "type": "null"
+        },
+        "reason": {
+          "enum": [
+            "missing_frequency",
+            "unsupported_frequency",
+            "unspecified_event",
+            "unspecified_relation"
+          ]
+        }
+      },
+      "required": [
+        "source_record_id",
+        "source_fingerprint",
+        "evidence",
+        "decision",
+        "frequency",
+        "reason"
+      ]
+    }
+  ]
+}
