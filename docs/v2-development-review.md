@@ -15,7 +15,7 @@ No consequential blocker found for retaining this as an isolated development pro
 The draft-07 schema and bounded JavaScript checker agree on the inspected JSON contract:
 
 - Required capture ID, source fingerprint, exact C9 evidence quotation, and a distinct `propose` or `abstain` decision.
-- Positive integer month/week intervals; bounded integer day-of-month rules; positive integer operating-hour meter intervals with fixed basis.
+- Positive safe-integer month/week intervals and operating-hour meter intervals, bounded above by `Number.MAX_SAFE_INTEGER`; bounded integer day-of-month rules; fixed meter unit and basis.
 - A two-element, calendar-then-meter tuple with explicit `whichever_first`; reversed or string-valued triggers fail.
 - An abstention branch with null frequency and a bounded reason; unsupported extra fields fail at the outer object, evidence object, and frequency objects.
 
@@ -37,8 +37,8 @@ This is a smaller frequency-or-abstention task than v1's literal-field, frequenc
 
 The twelve v1 evaluation captures are already exposed. The plan correctly disallows relabeling a rerun of them as a fresh held-out evaluation. Any future claim needs a genuinely separate test packet and a new frozen source/contract/oracle/configuration, with any development tuning disclosed. The original development captures may support a separately authorized bounded development run; none occurred during this review.
 
-## Nonblocking future hardening
+## Safe-integer finding resolved
 
-`Number.isInteger` and the schema's unbounded positive integer allow numeric magnitudes beyond JavaScript's safe-integer range at the shape layer. The current explicit grammar's small constants cause the meaning checker to reject such values, so this does not bypass the present contract. If a future grammar supports arbitrary counts, define a safe integer upper bound in both schema and checker before freezing that version.
+The earlier nonblocking observation about unbounded integer magnitudes is resolved. Independent source inspection confirms the shared interval schema now sets `maximum:Number.MAX_SAFE_INTEGER`, and the bounded checker uses `Number.isSafeInteger`. The synthetic invalid-shape regression includes `Number.MAX_SAFE_INTEGER+1`. All **9/9 synthetic tests passed again** after this change. The schema and checker now agree on the safe-integer upper bound for calendar and meter interval counts; no runtime activation or model compatibility claim follows from this CPU check.
 
 No new model capability, business benefit, runtime union support, scheduling validity, or target-system readiness is established by these CPU checks.
