@@ -1,5 +1,7 @@
 # Independent review of the proposed v2 development contract
 
+> **Historical / superseded review.** This page records an earlier development proposal, including its old grammar-bound meaning checker. It does not describe the activated contract. See the [current frozen v2 protocol](../development/v2-protocol.md), [actual development results and limitations](v2-development-results.md), and [current CPU inspection UI](ui-maintenance.md). The historical findings below remain unchanged as an audit record.
+
 **Status: proposed, not activated. CPU development checks only. Runtime compatibility of the union/tuple schema is untested. No new model results.**
 
 Reviewed `development/v2-contract.mjs`, `test/v2-development.test.mjs`, and `docs/v2-development-plan.md`. This review did not read the oracle, score original evaluation cases, contact a model API, obtain a GPU lease, or change v1 implementation or artifacts. The reviewer owns this report only.

@@ -1,5 +1,7 @@
 # CPU review UI maintenance
 
+The server receipt means **export prepared/acknowledged**, not client download completion. Actual browser tests separately waited for a completed local download. The historical screenshots and browser receipt below were captured at commit `382937d` before this wording clarification; they are retained unchanged.
+
 This maintenance pass made zero inference calls and used only existing development captures, stored v1/v2 outputs and explicitly synthetic browser responses. The blocked independent challenge was not materialized, read, recreated or scored.
 
 Actual Chrome reproduced two frozen v2 display defects: failed attempts were described as not attempted, and incomplete archived content was labeled as requiring semantic review. The new `review-ui/` overlay separates not attempted, failed, incomplete, invalid JSON/schema, stale source and structurally valid but unaccepted suggestions. It independently checks the raw content against the displayed capture/hash/C9 quote/byte span. Backend copies do not repair model meaning. A typed summary accompanies usable raw suggestions, while a person must still judge semantics. This read-only desk has no acceptance, export or inference endpoint.
