@@ -1,0 +1,69 @@
+{
+  "repository": "https://github.com/Kimhyuntae9665/maintenance-job-plan-draft-review",
+  "published_commit": "63324887fa73952df9c897e9d00d954812d0ba74",
+  "checked_url": "https://github.com/Kimhyuntae9665/maintenance-job-plan-draft-review/tree/63324887fa73952df9c897e9d00d954812d0ba74",
+  "kind": "Actual CPU published-image loading; not fixture evaluation",
+  "model_calls": 0,
+  "checks": [
+    {
+      "width": 360,
+      "http_status": 200,
+      "images": [
+        {
+          "kind": "diagram",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 760,
+          "displayWidth": 294
+        },
+        {
+          "kind": "sourceGrid",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2277,
+          "displayWidth": 293.984375
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "http_status": 200,
+      "images": [
+        {
+          "kind": "diagram",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 760,
+          "displayWidth": 324
+        },
+        {
+          "kind": "sourceGrid",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2277,
+          "displayWidth": 323.984375
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "http_status": 200,
+      "images": [
+        {
+          "kind": "diagram",
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 760,
+          "displayWidth": 390
+        },
+        {
+          "kind": "sourceGrid",
+          "loaded": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 2277,
+          "displayWidth": 837.984375
+        }
+      ]
+    }
+  ]
+}
