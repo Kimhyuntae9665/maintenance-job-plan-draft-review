@@ -1,0 +1,17 @@
+{
+  "kind": "Actual P09 v2 development completion and safe GPU release evidence",
+  "model_http_calls": 3,
+  "completed_done_true": 3,
+  "case_ids": [
+    "PM001",
+    "PM002",
+    "PM010"
+  ],
+  "development_process": "exited",
+  "shared_lock": "free_acquired_and_released",
+  "timeout_marker": "absent",
+  "retries": 0,
+  "demo_calls": 0,
+  "new_challenge_evaluation_calls": 0,
+  "lease_release_safe": true
+}

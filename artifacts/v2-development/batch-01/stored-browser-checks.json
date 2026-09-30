@@ -1,0 +1,13 @@
+{
+  "kind": "actual Chrome CPU UI engineering checks, synthetic proposal route only; zero inference",
+  "additional_inference_calls_for_capture": 0,
+  "stored_original_development_calls": 3,
+  "Tab_Enter_focus_after_render": "PM001",
+  "delayed_response_newer_selection_and_explicit_focus_preserved": true,
+  "mobile": {
+    "width": 390,
+    "viewport": 390,
+    "minText": 14
+  },
+  "synthetic_structural_state_never_semantic_correct": true
+}

@@ -1,0 +1,74 @@
+{
+  "kind": "Deterministic backend enrichment, separate from raw model metrics; no frequency repair",
+  "enrichments": [
+    {
+      "kind": "backend_enrichment_not_model_output",
+      "source_record_id": "PM001",
+      "source_fingerprint": "d1686f9bb4e6fef7c414beca80a634f2fcfa9a014d278304f75038048ec3dc6d",
+      "raw_proposal_fingerprint": "94b5b93616d89a1a3202a1b4b3142dfb5336fa0e6d8b4974c9426657bd43a293",
+      "literal_fields": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "00017",
+        "task_text": "점검 기록의 누락 항목을 확인한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null
+      },
+      "authoritative_source_blockers": [],
+      "suggestion_state": "STRUCTURALLY_VALID_REQUIRES_SEMANTIC_REVIEW",
+      "semantic_review": "required; no automated semantic approval",
+      "human_acceptance": "not_collected_in_development_desk",
+      "schedule_status": "unscheduled",
+      "next_due_date": null,
+      "assigned_person": null,
+      "target_import_status": "not_submitted"
+    },
+    {
+      "kind": "backend_enrichment_not_model_output",
+      "source_record_id": "PM002",
+      "source_fingerprint": "69705e026109ff9dc6a71e831e5a4f2bf8c6edb9679c7d30175a8692036286e0",
+      "raw_proposal_fingerprint": "c53b466a6925c4e93cde8677490abf953aab7fa9afedae888094968bc8bceb4a",
+      "literal_fields": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-002",
+        "task_text": "운전시간 기록과 점검대장 참조를 확인한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null
+      },
+      "authoritative_source_blockers": [],
+      "suggestion_state": "STRUCTURALLY_VALID_REQUIRES_SEMANTIC_REVIEW",
+      "semantic_review": "required; no automated semantic approval",
+      "human_acceptance": "not_collected_in_development_desk",
+      "schedule_status": "unscheduled",
+      "next_due_date": null,
+      "assigned_person": null,
+      "target_import_status": "not_submitted"
+    },
+    {
+      "kind": "backend_enrichment_not_model_output",
+      "source_record_id": "PM010",
+      "source_fingerprint": "bd8f0fecfc0d1839af35d8fbf1583f07610a313e5b09cc66a2e8a50b5582f2f5",
+      "raw_proposal_fingerprint": "c6e91c392741fb63730f98e42231c4b53ed86e9f94219444d5ddce8d63a8e83d",
+      "literal_fields": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-010",
+        "task_text": "검토 담당 역할이 기록되었는지 확인한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null
+      },
+      "authoritative_source_blockers": [],
+      "suggestion_state": "STRUCTURALLY_VALID_REQUIRES_SEMANTIC_REVIEW",
+      "semantic_review": "required; no automated semantic approval",
+      "human_acceptance": "not_collected_in_development_desk",
+      "schedule_status": "unscheduled",
+      "next_due_date": null,
+      "assigned_person": null,
+      "target_import_status": "not_submitted"
+    }
+  ]
+}

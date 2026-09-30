@@ -1,0 +1,17 @@
+{
+  "kind": "P09 v2 authorized development lease preflight; zero inference",
+  "frozen_commit": "1b3bbdbe715ff0b231adcc6b1916940c4674f4af",
+  "declared_commit": "09df59544a6691968dd2f9ef3075cfa251acc5d5",
+  "schema_sha256": "6b744c11d517e220da4c416cee4be94af8e82ed0ff9eb45530e0643ac77a4ae0",
+  "prompt_sha256": "7bdd532413f8bfad092f84b705104ed14610917ab0e6ed3444ad2428f2955e79",
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "ollama_version": "0.17.7",
+  "runtime_identity_verified": true,
+  "shared_lock": "free_acquired_and_released",
+  "timeout_marker": "absent",
+  "inference_client_processes": 0,
+  "loaded_models": 0,
+  "gpu_before": "NVIDIA GeForce RTX 4060, 8188, 383, 0",
+  "model_calls": 0
+}

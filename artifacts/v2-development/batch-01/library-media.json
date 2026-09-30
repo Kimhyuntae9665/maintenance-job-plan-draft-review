@@ -1,0 +1,12 @@
+{
+  "path": "artifacts/media/v2-development-stored-desktop.png",
+  "library_file_id": "libfile_3d05f6cd1778819186a1b24e68bc190c",
+  "file_id": "file_00000000eca882069f38027c4232ad7d",
+  "version": 0,
+  "library_file_name": "v2-development-stored-desktop.png",
+  "sha256": "2604cdc5fb052c90352637613ab32d1fccf69aaba8aad081429b63929e0dd248",
+  "bytes": 190070,
+  "linux_identity_metadata_verified": true,
+  "additional_inference_for_media": 0,
+  "content": "Actual CPU Chrome replay of preserved v2 development output; no semantic approval collected"
+}

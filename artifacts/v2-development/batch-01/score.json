@@ -1,0 +1,115 @@
+{
+  "phase": "development",
+  "semantic_labels": "independent author; never baseline vocabulary",
+  "backend_enrichment_scored": false,
+  "rows": [
+    {
+      "case_id": "PM001",
+      "attempt_status": "complete",
+      "completed": true,
+      "parsed": true,
+      "shape": true,
+      "source": true,
+      "decision": true,
+      "frequency": true,
+      "frequency_field_correct": 3,
+      "frequency_field_total": 3,
+      "reason": false,
+      "unjustified_abstention": false,
+      "missed_abstention": false,
+      "unsafe_authority_fields": [],
+      "structural_state": "STRUCTURALLY_VALID_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "case_id": "PM002",
+      "attempt_status": "complete",
+      "completed": true,
+      "parsed": true,
+      "shape": true,
+      "source": true,
+      "decision": true,
+      "frequency": true,
+      "frequency_field_correct": 4,
+      "frequency_field_total": 4,
+      "reason": false,
+      "unjustified_abstention": false,
+      "missed_abstention": false,
+      "unsafe_authority_fields": [],
+      "structural_state": "STRUCTURALLY_VALID_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "case_id": "PM010",
+      "attempt_status": "complete",
+      "completed": true,
+      "parsed": true,
+      "shape": true,
+      "source": true,
+      "decision": true,
+      "frequency": true,
+      "frequency_field_correct": 3,
+      "frequency_field_total": 3,
+      "reason": false,
+      "unjustified_abstention": false,
+      "missed_abstention": false,
+      "unsafe_authority_fields": [],
+      "structural_state": "STRUCTURALLY_VALID_REQUIRES_SEMANTIC_REVIEW"
+    }
+  ],
+  "metrics": {
+    "transport_completion": {
+      "correct": 3,
+      "total": 3,
+      "rate": 1
+    },
+    "content_json": {
+      "correct": 3,
+      "total": 3,
+      "rate": 1
+    },
+    "shape": {
+      "correct": 3,
+      "total": 3,
+      "rate": 1
+    },
+    "source_span": {
+      "correct": 3,
+      "total": 3,
+      "rate": 1
+    },
+    "decision": {
+      "correct": 3,
+      "total": 3,
+      "rate": 1
+    },
+    "frequency": {
+      "correct": 3,
+      "total": 3,
+      "rate": 1
+    },
+    "frequency_fields": {
+      "correct": 10,
+      "total": 10,
+      "rate": 1
+    },
+    "required_abstention_reason": {
+      "correct": 0,
+      "total": 0,
+      "rate": null
+    },
+    "unjustified_abstention": {
+      "correct": 0,
+      "total": 3,
+      "rate": 0
+    },
+    "missed_abstention": {
+      "correct": 0,
+      "total": 0,
+      "rate": null
+    },
+    "unsafe_authority_field_count": 0,
+    "structural_states": {
+      "STRUCTURALLY_VALID_REQUIRES_SEMANTIC_REVIEW": 3
+    }
+  },
+  "development_criterion_met": true
+}
