@@ -1,0 +1,76 @@
+{
+  "kind": "Post-evaluation CPU UI maintenance, separate from unchanged method outcomes",
+  "baseline_commit": "f34b8b4d448c76cba72bed73b4b533f87e1221b9",
+  "node_tests": 112,
+  "cpu_python_mocks": 11,
+  "actual_chrome_checks": 14,
+  "additional_inference_calls": 0,
+  "challenge_access_or_scoring": false,
+  "v2_frozen_files_verified": 28,
+  "v2_freeze_sha256": "68ee4c9474905e76274a12384f20e5a79c750c2eb9933cde3be510125ed07caf",
+  "v1_post_evaluation_runtime_ui_files": [
+    "packet-server.mjs",
+    "app.mjs",
+    "index.html"
+  ],
+  "preserved_attempts_and_results_sha256": {
+    "artifacts/packet-model-evaluation.json": "f5a3fec95ef6a49929a1d361925221eaffad24e7f20de2ac726a2da23a56a6ed",
+    "artifacts/packet-baseline-evaluation.json": "b7d41bef740f68a2031efdb61654494df0f1248ff3b0e841880c844db662bbef",
+    "artifacts/experiment-freeze.json": "b73b8e2293c4b73e83cb83577e039e037671199cb13c594d4eb54c420dd6a4ca",
+    "artifacts/v2-development/freeze.json": "68ee4c9474905e76274a12384f20e5a79c750c2eb9933cde3be510125ed07caf",
+    "artifacts/v2-development/batch-01/score.json": "ad8c4d1836005ac91089f598542bfe5368ec209ebe689d30eb1edb90fa66557c",
+    "artifacts/model-attempts/PM003.json": "c04c6ae1c790404aa2577348b682cc208cd36bbf67020bae14e74c7f02a9b46d",
+    "artifacts/model-attempts/PM004.json": "bc57fd24edfcdfcda9e065de19cf1707b6695afa8c32466dceeae20ffb0e4995",
+    "artifacts/model-attempts/PM005.json": "007ef6ac4a9b667c7f984e5c3cfee25e324d04e9f4daec31b248ba21b636d584",
+    "artifacts/model-attempts/PM006.json": "add3a1358519f9c6ed5666cf1a31d2252bb0ab00f4bdbc59483845a1306d50c2",
+    "artifacts/model-attempts/PM007.json": "ffcd410664cacdd29933a0a49ca9043686ee562d416863366d8e2b885c601a1d",
+    "artifacts/model-attempts/PM008.json": "81814cc01372f06656c515009755f66926ada474729684992e04ca01be20e094",
+    "artifacts/model-attempts/PM009A.json": "527e24a287c7c39033eeed79b3edd3b05f1a92d8e40ef68bcf759017b978a5c9",
+    "artifacts/model-attempts/PM009B.json": "b7fa1e08e70296621a028de13c584b4bcb4164b2920362d0da9e0ac7bb4cddfc",
+    "artifacts/model-attempts/PM011.json": "04610004a485988f2ccc7d8f4bcbc69f42e9342c5360dfb028d9ae21cdaa99a6",
+    "artifacts/model-attempts/PM012.json": "9fff72273462266ea1b6d858134fcedff0fd9ea6195e0735dce15a88ce76ae7e",
+    "artifacts/model-attempts/PM013.json": "a4b67cfc9addfbccf63136f7243194ce96739fc8332a61539a1c479f8a83cb60",
+    "artifacts/model-attempts/PM014.json": "bc31305219e165799e59e6a2e5ae335bbc4bb5b2e40a9fde37705ecc92ea27cd",
+    "artifacts/v2-development/batch-01/attempts/PM001.json": "1d1cfb1203a2be6f2292abae9f8f3281ad29d1ed3028ce0cb6ed2202ff7e4ac6",
+    "artifacts/v2-development/batch-01/attempts/PM002.json": "53c57634a3a7fb85461fb628ff34f9fc1d44a3d2b05551fd5fe27543c5550d0b",
+    "artifacts/v2-development/batch-01/attempts/PM010.json": "62808c449d2fc5d69126e39ab827f80cf3c14efddabfae6d1e50f09a32101773"
+  },
+  "media": [
+    {
+      "path": "artifacts/media/v2-review-ui-desktop.png",
+      "sha256": "7dff7fbe93e23aeae42b1b72889c6f6aaa005dc1d6eeb7bbf64f649aa57b09b8",
+      "bytes": 230487,
+      "kind": "Actual CPU Chrome stored-output/review workflow capture",
+      "additional_model_calls": 0
+    },
+    {
+      "path": "artifacts/media/v2-review-ui-mobile-390.png",
+      "sha256": "e1eb4290856e09ee0a3185a1791a5d9598ef16425fde59034574b467a331798c",
+      "bytes": 178927,
+      "kind": "Actual CPU Chrome stored-output/review workflow capture",
+      "additional_model_calls": 0
+    },
+    {
+      "path": "artifacts/media/packet-validation-evidence.png",
+      "sha256": "7f188b52985010cbc9e04e99b241168ac93a42e6870ea1d730953fefcb421ff5",
+      "bytes": 876408,
+      "kind": "Actual CPU Chrome default-desk maintenance workflow capture",
+      "additional_model_calls": 0
+    },
+    {
+      "path": "artifacts/media/packet-historical-model-revision.png",
+      "sha256": "d1d78b3a3c03bcfe0a5a37949705f08247869f2e6690ea58e72b36939f213b8c",
+      "bytes": 814683,
+      "kind": "Actual CPU Chrome default-desk maintenance workflow capture",
+      "additional_model_calls": 0
+    },
+    {
+      "path": "artifacts/media/packet-export-history.png",
+      "sha256": "33e45e576423f4d2d08cc9eab59ef5f7f7772dfd067a584480e02142773498e9",
+      "bytes": 765709,
+      "kind": "Actual CPU Chrome default-desk maintenance workflow capture",
+      "additional_model_calls": 0
+    }
+  ],
+  "new_library_media_ids_confirmed": false
+}

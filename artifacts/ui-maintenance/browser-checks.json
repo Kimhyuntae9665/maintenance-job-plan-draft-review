@@ -1,0 +1,36 @@
+{
+  "kind": "Actual CPU Chrome maintenance checks; synthetic response states explicitly named",
+  "additional_model_calls": 0,
+  "challenge_contents_used": false,
+  "checks": {
+    "v2_actual_tab_enter_focus": true,
+    "source_pointer_named_keyboard_destination": true,
+    "repeated_stored_inspection_no_acceptance": true,
+    "delayed_old_read_preserves_new_selection_and_explicit_focus": true,
+    "synthetic_failed_honest_nonreviewable_state": true,
+    "synthetic_incomplete_honest_nonreviewable_state": true,
+    "synthetic_stale_honest_nonreviewable_state": true,
+    "v2_mobile": {
+      "viewport": 390,
+      "document_width": 390,
+      "minimum_meaningful_text_px": 14
+    },
+    "default_keyboard_and_repeated_review": true,
+    "exact_scope_and_visible_bound_download_ack": true,
+    "actual_stored_rejection_field_evidence": true,
+    "current_header_and_historical_model_original_revision": true,
+    "source_change_reconciles_filter_and_preserves_historical_export": true,
+    "two_client_stale_review_no_reacceptance": true
+  },
+  "page_errors": [],
+  "application_file_sha256": {
+    "app.mjs": "aaf864a2b93dd8cef30fb2abc0291ec10e0e12da59ef5e1abf3dea65aec97cc5",
+    "index.html": "97996a0b6dbdeb45aa46c78f7d9a32363db448296e5eeb64a186012d1c71a261",
+    "packet-server.mjs": "bbaa6a5438a4c030b3852656db5b4f89b9425bec08a1f028bd271f3c4f6c4fc5",
+    "ui-evidence.mjs": "f27492807669ecb0ee947485e3a4f3902fd7e4608076ced92e6c24d1a3ac6607",
+    "review-ui/server.mjs": "06f04f0f32977c615c3d9e18684fbcb032f216852ca47de1491658a621325751",
+    "review-ui/client.mjs": "ac237c6b96297b20159b6587bec220aa22fd27d365e098b3132c3d83bad2fc72",
+    "review-ui/index.html": "6814ca860f6fc1338bbd4bd87333ce825c48c82f42eb952bbe422e3b37f9158e",
+    "review-ui/view-state.mjs": "6449963d2afa8d7678b1597a8e9fc5b09b936d252cb90380a3e3bd988335515c"
+  }
+}

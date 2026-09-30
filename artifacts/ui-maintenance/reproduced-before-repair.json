@@ -1,0 +1,51 @@
+{
+  "kind": "CPU reproductions before repair, not inference results",
+  "additional_model_calls": 0,
+  "challenge_contents_used": false,
+  "v2_synthetic_display": {
+    "kind": "Reproduced frozen-UI display issues with synthetic CPU responses; no model outcome claims",
+    "additional_inference": 0,
+    "challenge_contents_used": false,
+    "observed": {
+      "failed-attempt": {
+        "status": "PM001 loaded \u00b7 failed-attempt \u00b7 semantic review required",
+        "suggestion_state": "NO_STORED_OUTPUT",
+        "raw": "No stored output. Not attempted."
+      },
+      "incomplete-output": {
+        "status": "PM001 loaded \u00b7 incomplete-output \u00b7 semantic review required",
+        "suggestion_state": "NO_STORED_OUTPUT",
+        "raw": "{\"decision\":\"propose\"}"
+      }
+    }
+  },
+  "default_actual_browser": {
+    "kind": "Actual CPU Chrome reproduction before repairs",
+    "additional_model_calls": 0,
+    "challenge_contents_used": false,
+    "missing_visible_export_history": true,
+    "hidden_model_validation_errors": [
+      "UNSUPPORTED_NORMALIZED_FIELDS"
+    ],
+    "filter_incoherence": {
+      "opened": "PM001",
+      "selected": [
+        "PM001"
+      ],
+      "visible_ids": [
+        "PM002",
+        "PM003",
+        "PM004",
+        "PM005",
+        "PM006",
+        "PM009A",
+        "PM010",
+        "PM011",
+        "PM012",
+        "PM013",
+        "PM014",
+        "PM009B"
+      ]
+    }
+  }
+}

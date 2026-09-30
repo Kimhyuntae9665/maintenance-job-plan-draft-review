@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node packet-server.mjs",
     "test": "node --test test/*.test.mjs",
-    "v2:desk": "node development/v2-desk.mjs",
+    "v2:desk": "node review-ui/server.mjs",
+    "v2:desk:frozen": "node development/v2-desk.mjs",
     "v2:score": "node development/v2-grade.mjs"
   },
   "engines": {
