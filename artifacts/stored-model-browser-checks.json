@@ -1,0 +1,11 @@
+{
+  "kind": "Actual CPU-rendered replay of stored frozen Qwen attempts; no additional inference",
+  "additional_model_calls": 0,
+  "checks": {
+    "rejected_stored_candidate_cannot_be_accepted": true,
+    "unsupported_model_fields_correction_rejected": true,
+    "restore_validate_and_fresh_manual_inspection": true,
+    "returned_then_explicitly_accepted_status_consistent": true,
+    "source_revision_removes_cached_model_contents": true
+  }
+}

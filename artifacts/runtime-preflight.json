@@ -1,0 +1,13 @@
+{
+  "scope": "P09 authorized frozen evaluation preflight; read-only runtime checks",
+  "shared_lock": "free_acquired_and_released",
+  "timeout_marker": "absent",
+  "inference_client_processes": 0,
+  "loaded_models_before": 0,
+  "model_name": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "model_size_bytes": 2497293931,
+  "ollama_version": "ollama version is 0.17.7",
+  "gpu_before": "NVIDIA GeForce RTX 4060, 8188, 383, 0",
+  "model_calls_this_check": 0
+}

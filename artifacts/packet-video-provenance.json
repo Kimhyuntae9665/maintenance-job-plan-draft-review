@@ -1,0 +1,21 @@
+{
+  "kind": "Actual CPU-rendered installed Chrome screen recording",
+  "size": [
+    1440,
+    900
+  ],
+  "duration_seconds": 12.36,
+  "encoding": "software libx264",
+  "additional_inference_calls": 0,
+  "stored_model_attempts": "Earlier frozen twelve-call batch; all rejected by rule gate",
+  "human_review": "Automated fictional UI inspection, not independent human maintenance adjudication",
+  "demonstrated": [
+    "immutable source and exact frequency cell span",
+    "stored model rejection",
+    "unsupported editor acceptance disabled",
+    "source-supported restore plus fresh inspection",
+    "exact one-row JSON export, no target receipt",
+    "filter clears hidden selection",
+    "changed source archives model and review"
+  ]
+}

@@ -1,19 +1,66 @@
 {
-  "kind": "Confirmed CPU scaffold media identities; no evaluation or model claims",
+  "kind": "Confirmed current P09 Library identities: packet stage, CPU media, edited diagram versions; original scaffold media retained separately",
+  "additional_inference_for_media": 0,
   "media": [
     {
       "path": "docs/architecture.png",
       "library_file_id": "libfile_0f21967c10b481919a97c6f662c7d79d",
-      "version": 0,
-      "sha256": "fcb671c3243d9434adffa0a093a8949f33b5ce03e674795bb90adec8f1b752ea",
-      "bytes": 25642
+      "file_id": "file_000000007e988206a478296c3e2b77dd",
+      "version": 1,
+      "library_file_name": "architecture(3).png",
+      "sha256": "4dce690e06414a2d1ce845a51322c3a890a06102987a5d18f93d0732c655104b",
+      "bytes": 35872,
+      "identity_metadata_verified": true
     },
     {
       "path": "docs/architecture.svg",
       "library_file_id": "libfile_042af95ebcc481918942d7a9ecd5a9f6",
+      "file_id": "file_0000000089488206926c76d43694f2bb",
+      "version": 1,
+      "library_file_name": "architecture(2).svg",
+      "sha256": "0d9aedeb96af6b4f05bbf69774d1f0158e488a1d074d4b69c54fa1e5c1b3646b",
+      "bytes": 4441,
+      "identity_metadata_verified": true
+    },
+    {
+      "path": "artifacts/media/packet-desktop.png",
+      "library_file_id": "libfile_bc70611a63048191913e2c707aa9e997",
+      "file_id": "file_000000003cb4820681b591519752153a",
       "version": 0,
-      "sha256": "7897bb1e81f0d650ddc829c1e52997d994dbcfa07312b30d6b8a309ab2555d5a",
-      "bytes": 3101
+      "library_file_name": "packet-desktop.png",
+      "sha256": "6bee33d41b412f3bb0e9c91123af24b89c6e9af4d57604b06b043029a8ed3876",
+      "bytes": 684141,
+      "identity_metadata_verified": true
+    },
+    {
+      "path": "artifacts/media/packet-mobile-390.png",
+      "library_file_id": "libfile_ad77cdd97e74819184784d858e2ab76a",
+      "file_id": "file_00000000bec482069906704586193a2e",
+      "version": 0,
+      "library_file_name": "packet-mobile-390.png",
+      "sha256": "a6e8322eb94a1c3896fb2fb7012899ec0c8062f8c1542265fd9c07cdb730c296",
+      "bytes": 441274,
+      "identity_metadata_verified": true
+    },
+    {
+      "path": "artifacts/media/packet-stored-model-rejection.png",
+      "library_file_id": "libfile_72d4630e51708191a57781df1905aee5",
+      "file_id": "file_0000000006b08206b5fbc9d6037eb1b0",
+      "version": 0,
+      "library_file_name": "packet-stored-model-rejection.png",
+      "sha256": "4c6de0ce1b43d3ce582cbc4a3c62c3cd5ca322dd2f70d384e5493b577b2ecc2b",
+      "bytes": 770017,
+      "identity_metadata_verified": true
+    },
+    {
+      "path": "artifacts/media/packet-review.mp4",
+      "library_file_id": "libfile_38398ac8623081919c1e2b63a481497c",
+      "file_id": "file_000000002ee08206afc5247e8910da27",
+      "version": 0,
+      "library_file_name": "packet-review.mp4",
+      "sha256": "ba8b77c27ad494ecf313e3519ff3726ca651d165621b4228451fe3e89e99f43d",
+      "bytes": 988226,
+      "identity_metadata_verified": true
     },
     {
       "path": "artifacts/media/scaffold-desktop.png",

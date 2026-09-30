@@ -1,0 +1,2027 @@
+{
+  "kind": "Raw frozen model evaluation before rule gate; no baseline replacement",
+  "experiment_freeze_sha256": "b73b8e2293c4b73e83cb83577e039e037671199cb13c594d4eb54c420dd6a4ca",
+  "gold_sha256": "9b8011f677a742ce668091f1fb333263238a04d697c2559421b84f8411569cec",
+  "http_calls": 12,
+  "development_calls": 0,
+  "retries": 0,
+  "demo_calls": 0,
+  "attempts": [
+    {
+      "case_id": "PM003",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "c04c6ae1c790404aa2577348b682cc208cd36bbf67020bae14e74c7f02a9b46d",
+      "elapsedMs": 8463.63,
+      "done_reason": "stop",
+      "eval_count": 383,
+      "prompt_eval_count": 1338
+    },
+    {
+      "case_id": "PM004",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "bc57fd24edfcdfcda9e065de19cf1707b6695afa8c32466dceeae20ffb0e4995",
+      "elapsedMs": 6413.92,
+      "done_reason": "stop",
+      "eval_count": 366,
+      "prompt_eval_count": 1331
+    },
+    {
+      "case_id": "PM005",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "007ef6ac4a9b667c7f984e5c3cfee25e324d04e9f4daec31b248ba21b636d584",
+      "elapsedMs": 6285.39,
+      "done_reason": "stop",
+      "eval_count": 356,
+      "prompt_eval_count": 1319
+    },
+    {
+      "case_id": "PM006",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "add3a1358519f9c6ed5666cf1a31d2252bb0ab00f4bdbc59483845a1306d50c2",
+      "elapsedMs": 6285.19,
+      "done_reason": "stop",
+      "eval_count": 362,
+      "prompt_eval_count": 1316
+    },
+    {
+      "case_id": "PM007",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "ffcd410664cacdd29933a0a49ca9043686ee562d416863366d8e2b885c601a1d",
+      "elapsedMs": 6294.9,
+      "done_reason": "stop",
+      "eval_count": 361,
+      "prompt_eval_count": 1334
+    },
+    {
+      "case_id": "PM008",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "81814cc01372f06656c515009755f66926ada474729684992e04ca01be20e094",
+      "elapsedMs": 6280.38,
+      "done_reason": "stop",
+      "eval_count": 355,
+      "prompt_eval_count": 1334
+    },
+    {
+      "case_id": "PM009A",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "527e24a287c7c39033eeed79b3edd3b05f1a92d8e40ef68bcf759017b978a5c9",
+      "elapsedMs": 6739.28,
+      "done_reason": "stop",
+      "eval_count": 379,
+      "prompt_eval_count": 1667
+    },
+    {
+      "case_id": "PM011",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "04610004a485988f2ccc7d8f4bcbc69f42e9342c5360dfb028d9ae21cdaa99a6",
+      "elapsedMs": 7522.05,
+      "done_reason": "stop",
+      "eval_count": 449,
+      "prompt_eval_count": 1352
+    },
+    {
+      "case_id": "PM012",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "9fff72273462266ea1b6d858134fcedff0fd9ea6195e0735dce15a88ce76ae7e",
+      "elapsedMs": 6433.66,
+      "done_reason": "stop",
+      "eval_count": 367,
+      "prompt_eval_count": 1345
+    },
+    {
+      "case_id": "PM013",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "a4b67cfc9addfbccf63136f7243194ce96739fc8332a61539a1c479f8a83cb60",
+      "elapsedMs": 6055.36,
+      "done_reason": "stop",
+      "eval_count": 344,
+      "prompt_eval_count": 1336
+    },
+    {
+      "case_id": "PM014",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "bc31305219e165799e59e6a2e5ae335bbc4bb5b2e40a9fde37705ecc92ea27cd",
+      "elapsedMs": 6283.06,
+      "done_reason": "stop",
+      "eval_count": 356,
+      "prompt_eval_count": 1335
+    },
+    {
+      "case_id": "PM009B",
+      "status": "complete",
+      "httpRequestAttempted": true,
+      "sha256": "b7fa1e08e70296621a028de13c584b4bcb4164b2920362d0da9e0ac7bb4cddfc",
+      "elapsedMs": 6820.39,
+      "done_reason": "stop",
+      "eval_count": 382,
+      "prompt_eval_count": 1641
+    }
+  ],
+  "gate_summary": {
+    "passed": 0,
+    "total": 12
+  },
+  "gates": [
+    {
+      "case_id": "PM003",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS"
+      ]
+    },
+    {
+      "case_id": "PM004",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS"
+      ]
+    },
+    {
+      "case_id": "PM005",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS",
+        "UNSUPPORTED_BLOCKERS",
+        "INVALID_REVIEW_BOUNDARY"
+      ]
+    },
+    {
+      "case_id": "PM006",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS"
+      ]
+    },
+    {
+      "case_id": "PM007",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS"
+      ]
+    },
+    {
+      "case_id": "PM008",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS",
+        "UNSUPPORTED_BLOCKERS",
+        "INVALID_REVIEW_BOUNDARY"
+      ]
+    },
+    {
+      "case_id": "PM009A",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS",
+        "UNSUPPORTED_BLOCKERS",
+        "INVALID_REVIEW_BOUNDARY"
+      ]
+    },
+    {
+      "case_id": "PM011",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS",
+        "UNSUPPORTED_BLOCKERS",
+        "INVALID_REVIEW_BOUNDARY"
+      ]
+    },
+    {
+      "case_id": "PM012",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS",
+        "UNSUPPORTED_BLOCKERS",
+        "INVALID_REVIEW_BOUNDARY"
+      ]
+    },
+    {
+      "case_id": "PM013",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS",
+        "UNSUPPORTED_BLOCKERS",
+        "INVALID_REVIEW_BOUNDARY"
+      ]
+    },
+    {
+      "case_id": "PM014",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS",
+        "UNSUPPORTED_BLOCKERS",
+        "INVALID_REVIEW_BOUNDARY"
+      ]
+    },
+    {
+      "case_id": "PM009B",
+      "valid": false,
+      "errors": [
+        "UNSUPPORTED_NORMALIZED_FIELDS",
+        "UNSUPPORTED_BLOCKERS",
+        "INVALID_REVIEW_BOUNDARY"
+      ]
+    }
+  ],
+  "policy": {
+    "version": "P09-EVALUATOR-1",
+    "literal_comparison": "Exact strings/null; no coercion or whitespace trimming",
+    "frequency_comparison": "Exact typed JSON; object key order ignored, array order retained (calendar then meter); no trigger aliases",
+    "blocker_comparison": "Sets after global ISSUE_ALIASES; duplicate original or aliased IDs invalidate issue schema",
+    "issue_aliases": {
+      "unspecified_event_condition": "event_condition_unspecified",
+      "missing_asset_id": "asset_id_missing",
+      "unspecified_trigger_relation": "trigger_relation_unspecified",
+      "formula_like_task": "formula_like_task_cell",
+      "missing_frequency": "frequency_missing",
+      "missing_responsible_role": "responsible_role_missing"
+    },
+    "unsupported_value_unit": "One non-null mismatched normalized top-level field, including extra fields; missing/null errors counted separately as mismatches",
+    "unsafe_acceptance": "Observed accepted state when oracle blockers, normalized mismatches, issue-schema errors, or unbound evidence exist; any acceptance is additionally unexpected without an explicit review workflow",
+    "scheduling_unknowns": "Descriptive only, illustrative and non-exhaustive; not an exact-match target or scheduling readiness certification",
+    "denominator": "All frozen cases retained including absent/invalid output; records and logical identities reported separately, by split and overall",
+    "workflow_tests": "Review receipts, authorization and export exactness require separate engineering tests; not inferred from extraction scores"
+  },
+  "scope": "Fixture-level conformance to author-written oracle; no independent maintenance-SME adjudication or generalization claim",
+  "summary": {
+    "record_denominator": 15,
+    "logical_row_denominator": 14,
+    "outputs_present": 12,
+    "literal_field_denominator": 105,
+    "literal_field_exact": 84,
+    "literal_record_exact": 12,
+    "typed_frequency_exact": 0,
+    "blocking_issues": {
+      "expected": 8,
+      "true_positive": 0,
+      "false_negative": 8,
+      "false_positive": 0,
+      "recall": 0,
+      "exact_records": 4,
+      "invalid_schema_records": 3
+    },
+    "unsupported_normalized_value_count": 12,
+    "normalized_mismatch_field_count": 45,
+    "reviewability_exact": 4,
+    "unsafe_reviewability": 8,
+    "unsafe_acceptance": 0,
+    "unexpected_automatic_acceptance": 0,
+    "invariants_exact": 12,
+    "evidence_bound_records": 12
+  },
+  "by_split": {
+    "development": {
+      "record_denominator": 3,
+      "logical_row_denominator": 3,
+      "outputs_present": 0,
+      "literal_field_denominator": 21,
+      "literal_field_exact": 0,
+      "literal_record_exact": 0,
+      "typed_frequency_exact": 0,
+      "blocking_issues": {
+        "expected": 0,
+        "true_positive": 0,
+        "false_negative": 0,
+        "false_positive": 0,
+        "recall": null,
+        "exact_records": 0,
+        "invalid_schema_records": 3
+      },
+      "unsupported_normalized_value_count": 0,
+      "normalized_mismatch_field_count": 33,
+      "reviewability_exact": 0,
+      "unsafe_reviewability": 0,
+      "unsafe_acceptance": 0,
+      "unexpected_automatic_acceptance": 0,
+      "invariants_exact": 0,
+      "evidence_bound_records": 0
+    },
+    "evaluation": {
+      "record_denominator": 12,
+      "logical_row_denominator": 11,
+      "outputs_present": 12,
+      "literal_field_denominator": 84,
+      "literal_field_exact": 84,
+      "literal_record_exact": 12,
+      "typed_frequency_exact": 0,
+      "blocking_issues": {
+        "expected": 8,
+        "true_positive": 0,
+        "false_negative": 8,
+        "false_positive": 0,
+        "recall": 0,
+        "exact_records": 4,
+        "invalid_schema_records": 0
+      },
+      "unsupported_normalized_value_count": 12,
+      "normalized_mismatch_field_count": 12,
+      "reviewability_exact": 4,
+      "unsafe_reviewability": 8,
+      "unsafe_acceptance": 0,
+      "unexpected_automatic_acceptance": 0,
+      "invariants_exact": 12,
+      "evidence_bound_records": 12
+    }
+  },
+  "cases": [
+    {
+      "case_id": "PM001",
+      "split": "development",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-01"
+      },
+      "output_present": false,
+      "attempt_status": "missing",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": false
+        },
+        {
+          "field": "site",
+          "exact": false
+        },
+        {
+          "field": "asset_namespace",
+          "exact": false
+        },
+        {
+          "field": "asset_id",
+          "exact": false
+        },
+        {
+          "field": "task_text",
+          "exact": false
+        },
+        {
+          "field": "responsible_role",
+          "exact": false
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": false
+        }
+      ],
+      "literal_exact_count": 0,
+      "literal_field_denominator": 7,
+      "literal_record_exact": false,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": false,
+        "expected_count": 0,
+        "true_positive_count": 0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "missed": [],
+        "false_positive": [],
+        "exact": false
+      },
+      "normalized_mismatch_fields": [
+        "organization",
+        "site",
+        "asset_namespace",
+        "asset_id",
+        "task_text",
+        "responsible_role",
+        "last_recorded_date",
+        "frequency",
+        "next_due_date",
+        "assigned_person",
+        "target_import_status"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [],
+      "unsupported_normalized_value_count": 0,
+      "reviewability_exact": false,
+      "unsafe_reviewability": false,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": false,
+      "evidence_valid": false,
+      "scheduling_unknowns": null,
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM002",
+      "split": "development",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-02"
+      },
+      "output_present": false,
+      "attempt_status": "missing",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": false
+        },
+        {
+          "field": "site",
+          "exact": false
+        },
+        {
+          "field": "asset_namespace",
+          "exact": false
+        },
+        {
+          "field": "asset_id",
+          "exact": false
+        },
+        {
+          "field": "task_text",
+          "exact": false
+        },
+        {
+          "field": "responsible_role",
+          "exact": false
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": false
+        }
+      ],
+      "literal_exact_count": 0,
+      "literal_field_denominator": 7,
+      "literal_record_exact": false,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": false,
+        "expected_count": 0,
+        "true_positive_count": 0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "missed": [],
+        "false_positive": [],
+        "exact": false
+      },
+      "normalized_mismatch_fields": [
+        "organization",
+        "site",
+        "asset_namespace",
+        "asset_id",
+        "task_text",
+        "responsible_role",
+        "last_recorded_date",
+        "frequency",
+        "next_due_date",
+        "assigned_person",
+        "target_import_status"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [],
+      "unsupported_normalized_value_count": 0,
+      "reviewability_exact": false,
+      "unsafe_reviewability": false,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": false,
+      "evidence_valid": false,
+      "scheduling_unknowns": null,
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM003",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-03"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 0,
+        "true_positive_count": 0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "missed": [],
+        "false_positive": [],
+        "exact": true
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": true,
+      "unsafe_reviewability": false,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM004",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-04"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 0,
+        "true_positive_count": 0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "missed": [],
+        "false_positive": [],
+        "exact": true
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": true,
+      "unsafe_reviewability": false,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM005",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-05"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 1,
+        "true_positive_count": 0,
+        "false_negative_count": 1,
+        "false_positive_count": 0,
+        "missed": [
+          "event_condition_unspecified"
+        ],
+        "false_positive": [],
+        "exact": false
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": false,
+      "unsafe_reviewability": true,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM006",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-06"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 0,
+        "true_positive_count": 0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "missed": [],
+        "false_positive": [],
+        "exact": true
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": true,
+      "unsafe_reviewability": false,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM007",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-07"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 0,
+        "true_positive_count": 0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "missed": [],
+        "false_positive": [],
+        "exact": true
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": true,
+      "unsafe_reviewability": false,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM008",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-08"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 1,
+        "true_positive_count": 0,
+        "false_negative_count": 1,
+        "false_positive_count": 0,
+        "missed": [
+          "asset_id_missing"
+        ],
+        "false_positive": [],
+        "exact": false
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": false,
+      "unsafe_reviewability": true,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM009A",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-09"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 1,
+        "true_positive_count": 0,
+        "false_negative_count": 1,
+        "false_positive_count": 0,
+        "missed": [
+          "same_identity_content_conflict"
+        ],
+        "false_positive": [],
+        "exact": false
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": false,
+      "unsafe_reviewability": true,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM010",
+      "split": "development",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-10"
+      },
+      "output_present": false,
+      "attempt_status": "missing",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": false
+        },
+        {
+          "field": "site",
+          "exact": false
+        },
+        {
+          "field": "asset_namespace",
+          "exact": false
+        },
+        {
+          "field": "asset_id",
+          "exact": false
+        },
+        {
+          "field": "task_text",
+          "exact": false
+        },
+        {
+          "field": "responsible_role",
+          "exact": false
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": false
+        }
+      ],
+      "literal_exact_count": 0,
+      "literal_field_denominator": 7,
+      "literal_record_exact": false,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": false,
+        "expected_count": 0,
+        "true_positive_count": 0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "missed": [],
+        "false_positive": [],
+        "exact": false
+      },
+      "normalized_mismatch_fields": [
+        "organization",
+        "site",
+        "asset_namespace",
+        "asset_id",
+        "task_text",
+        "responsible_role",
+        "last_recorded_date",
+        "frequency",
+        "next_due_date",
+        "assigned_person",
+        "target_import_status"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [],
+      "unsupported_normalized_value_count": 0,
+      "reviewability_exact": false,
+      "unsafe_reviewability": false,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": false,
+      "evidence_valid": false,
+      "scheduling_unknowns": null,
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM011",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-11"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 1,
+        "true_positive_count": 0,
+        "false_negative_count": 1,
+        "false_positive_count": 0,
+        "missed": [
+          "trigger_relation_unspecified"
+        ],
+        "false_positive": [],
+        "exact": false
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": false,
+      "unsafe_reviewability": true,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM012",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-12"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 1,
+        "true_positive_count": 0,
+        "false_negative_count": 1,
+        "false_positive_count": 0,
+        "missed": [
+          "formula_like_task_cell"
+        ],
+        "false_positive": [],
+        "exact": false
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": false,
+      "unsafe_reviewability": true,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM013",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-13"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 1,
+        "true_positive_count": 0,
+        "false_negative_count": 1,
+        "false_positive_count": 0,
+        "missed": [
+          "frequency_missing"
+        ],
+        "false_positive": [],
+        "exact": false
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": false,
+      "unsafe_reviewability": true,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM014",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-14"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 1,
+        "true_positive_count": 0,
+        "false_negative_count": 1,
+        "false_positive_count": 0,
+        "missed": [
+          "responsible_role_missing"
+        ],
+        "false_positive": [],
+        "exact": false
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": false,
+      "unsafe_reviewability": true,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    },
+    {
+      "case_id": "PM009B",
+      "split": "evaluation",
+      "logical_record_identity": {
+        "source_system": "FICTIONAL-MAINTENANCE-REGISTER",
+        "logical_document_id": "PM-DEMO-2026-09",
+        "source_revision": "A",
+        "sheet_name": "PM_ROWS",
+        "row_key": "ROW-09"
+      },
+      "output_present": true,
+      "attempt_status": "complete",
+      "literal_fields": [
+        {
+          "field": "organization",
+          "exact": true
+        },
+        {
+          "field": "site",
+          "exact": true
+        },
+        {
+          "field": "asset_namespace",
+          "exact": true
+        },
+        {
+          "field": "asset_id",
+          "exact": true
+        },
+        {
+          "field": "task_text",
+          "exact": true
+        },
+        {
+          "field": "responsible_role",
+          "exact": true
+        },
+        {
+          "field": "last_recorded_date",
+          "exact": true
+        }
+      ],
+      "literal_exact_count": 7,
+      "literal_field_denominator": 7,
+      "literal_record_exact": true,
+      "typed_frequency_exact": false,
+      "blocking_issues": {
+        "schema_valid": true,
+        "expected_count": 1,
+        "true_positive_count": 0,
+        "false_negative_count": 1,
+        "false_positive_count": 0,
+        "missed": [
+          "same_identity_content_conflict"
+        ],
+        "false_positive": [],
+        "exact": false
+      },
+      "normalized_mismatch_fields": [
+        "frequency"
+      ],
+      "extra_normalized_fields": [],
+      "unsupported_normalized_fields": [
+        "frequency"
+      ],
+      "unsupported_normalized_value_count": 1,
+      "reviewability_exact": false,
+      "unsafe_reviewability": true,
+      "accepted": false,
+      "unexpected_automatic_acceptance": false,
+      "unsafe_acceptance": false,
+      "unsafe_acceptance_reasons": [],
+      "invariants_exact": true,
+      "evidence_valid": true,
+      "scheduling_unknowns": [],
+      "scheduling_readiness_assessed": false
+    }
+  ],
+  "observations": [
+    {
+      "case_id": "PM003",
+      "proposal": {
+        "source_record_id": "PM003",
+        "source_fingerprint": "a54f2407b4b2569e7701d164d89904bb69d300f4f6829116f320ebc849523a7d",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-A",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": "A-003",
+          "task_text": "점검 이력의 문서 참조를 확인한다.",
+          "responsible_role": "설비 담당",
+          "last_recorded_date": null,
+          "frequency": {
+            "kind": "combined",
+            "relation": null,
+            "triggers": [
+              "calendar",
+              "meter"
+            ]
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "매월 또는 운전 500시간 중 먼저 도래한 때",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    },
+    {
+      "case_id": "PM004",
+      "proposal": {
+        "source_record_id": "PM004",
+        "source_fingerprint": "8736f9e8f9d946f4b5a1f7700bd35c89f9f4aab362857b48718db2655bbca1fa",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-A",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": "A-004",
+          "task_text": "정기 검토 기록을 정리한다.",
+          "responsible_role": "설비 담당",
+          "last_recorded_date": "2026-01-31",
+          "frequency": {
+            "kind": "calendar_interval",
+            "value": "3",
+            "unit": "month"
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "3개월마다",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    },
+    {
+      "case_id": "PM005",
+      "proposal": {
+        "source_record_id": "PM005",
+        "source_fingerprint": "27f5752d1ac119a11fbb75ca488128c602b6fc6afda33b8607fb82e6b3021673",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-A",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": "A-005",
+          "task_text": "추가 검토 요청 기록을 확인한다.",
+          "responsible_role": "설비 담당",
+          "last_recorded_date": null,
+          "frequency": {
+            "kind": "event_trigger",
+            "value": null
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "필요 시",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    },
+    {
+      "case_id": "PM006",
+      "proposal": {
+        "source_record_id": "PM006",
+        "source_fingerprint": "9816ed794e11f10244bd4f4eb81af76a15386dfe90eaf3cb2bd5736b0a05a2b1",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-A",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": "00017",
+          "task_text": "주간 문서 목록을 대조한다.",
+          "responsible_role": "설비 담당",
+          "last_recorded_date": null,
+          "frequency": {
+            "kind": "calendar_interval",
+            "value": "매주",
+            "unit": "week"
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "매주",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    },
+    {
+      "case_id": "PM007",
+      "proposal": {
+        "source_record_id": "PM007",
+        "source_fingerprint": "6569a3fd3eae529621307161937f0aa992bf078800cc35355730f4e9a10bde94",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-B",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": "17",
+          "task_text": "주간 문서 목록을 대조한다.",
+          "responsible_role": "설비 담당",
+          "last_recorded_date": null,
+          "frequency": {
+            "kind": "calendar_interval",
+            "value": "매주",
+            "unit": "week"
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "매주",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    },
+    {
+      "case_id": "PM008",
+      "proposal": {
+        "source_record_id": "PM008",
+        "source_fingerprint": "5070254ae940f24d815137d43353e504c0e06a1e10bad49fe6dd5a37371e4fa6",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-B",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": null,
+          "task_text": "참조 문서의 버전을 확인한다.",
+          "responsible_role": "설비 담당",
+          "last_recorded_date": null,
+          "frequency": {
+            "kind": "calendar_interval",
+            "value": "매월",
+            "unit": "month"
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "매월",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    },
+    {
+      "case_id": "PM009A",
+      "proposal": {
+        "source_record_id": "PM009A",
+        "source_fingerprint": "e6049c5e8588c9e779d55e9041886f664eca0c6b15244e78a3f369ae4b4ebe90",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-A",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": "A-009",
+          "task_text": "운전시간 점검 기록을 대조한다.",
+          "responsible_role": "설비 담당",
+          "last_recorded_date": null,
+          "frequency": {
+            "kind": "meter_interval",
+            "value": "500",
+            "unit": "hour",
+            "basis": "operating_runtime"
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "운전 500시간마다",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    },
+    {
+      "case_id": "PM011",
+      "proposal": {
+        "source_record_id": "PM011",
+        "source_fingerprint": "97d071501d57b2d273835929f509e2007ede05d22ae2d920781fa1e1e61ee51a",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-A",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": "A-011",
+          "task_text": "점검대장에 주기를 기록한다.",
+          "responsible_role": "설비 담당",
+          "last_recorded_date": null,
+          "frequency": {
+            "kind": "combined",
+            "relation": null,
+            "triggers": [
+              "calendar_interval",
+              "meter_interval"
+            ],
+            "calendar_interval": {
+              "kind": "calendar_interval",
+              "value": "매월",
+              "unit": "month"
+            },
+            "meter_interval": {
+              "kind": "meter_interval",
+              "value": "500",
+              "unit": "hour",
+              "basis": "operating_runtime"
+            }
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "매월, 운전 500시간",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    },
+    {
+      "case_id": "PM012",
+      "proposal": {
+        "source_record_id": "PM012",
+        "source_fingerprint": "361efe0e421376bd5ed7db4d24bfd8af8fcaf06523e9d690c027d6576a0373c1",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-A",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": "A-012",
+          "task_text": "=HYPERLINK(\"https://example.invalid/demo\",\"외부 기준 확인\")",
+          "responsible_role": "설비 담당",
+          "last_recorded_date": null,
+          "frequency": {
+            "kind": "calendar_interval",
+            "value": "매월",
+            "unit": "month"
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "매월",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    },
+    {
+      "case_id": "PM013",
+      "proposal": {
+        "source_record_id": "PM013",
+        "source_fingerprint": "1d40df19704cf9b80656fa91ac6d2704a1e6943746114d021fcc4463fce1c006",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-A",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": "A-013",
+          "task_text": "기록 보관 위치를 확인한다.",
+          "responsible_role": "설비 담당",
+          "last_recorded_date": null,
+          "frequency": {
+            "kind": "unsupported",
+            "value": null
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    },
+    {
+      "case_id": "PM014",
+      "proposal": {
+        "source_record_id": "PM014",
+        "source_fingerprint": "62ffd1a4576baaf9c124d6fd02c51a69ae00c04457e709294f23816afdaf5feb",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-A",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": "A-014",
+          "task_text": "점검 기록의 담당 역할을 확인한다.",
+          "responsible_role": null,
+          "last_recorded_date": null,
+          "frequency": {
+            "kind": "calendar_interval",
+            "value": "매월",
+            "unit": "month"
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "매월",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    },
+    {
+      "case_id": "PM009B",
+      "proposal": {
+        "source_record_id": "PM009B",
+        "source_fingerprint": "9e41faaa42c670bffc01e29834136fc8f98a906f2c53cef2807da76969e53b0c",
+        "normalized_fields": {
+          "organization": "ORG-DEMO",
+          "site": "PLANT-A",
+          "asset_namespace": "DEMO-ASSET",
+          "asset_id": "A-009",
+          "task_text": "운전시간 점검 기록을 대조한다.",
+          "responsible_role": "설비 담당",
+          "last_recorded_date": null,
+          "frequency": {
+            "kind": "meter_interval",
+            "value": "1000",
+            "unit": "hour",
+            "basis": "operating_runtime"
+          },
+          "next_due_date": null,
+          "assigned_person": null,
+          "target_import_status": "not_submitted"
+        },
+        "citations": {
+          "organization": "C4",
+          "site": "C5",
+          "asset_namespace": "C6",
+          "asset_id": "C7",
+          "task_text": "C8",
+          "frequency": "C9",
+          "responsible_role": "C10",
+          "last_recorded_date": "C11"
+        },
+        "frequency_quote": "운전 1000시간마다",
+        "blocking_issues": [],
+        "scheduling_unknowns": [],
+        "reviewable": true,
+        "review_state": "unreviewed"
+      },
+      "evidence_valid": true,
+      "attempt_status": "complete",
+      "content_parse": "valid_json"
+    }
+  ]
+}

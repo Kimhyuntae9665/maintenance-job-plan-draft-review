@@ -1,0 +1,13 @@
+{
+  "kind": "Actual post-batch completion and safe lease-release evidence",
+  "http_calls": 12,
+  "completed_transport_responses": 12,
+  "model_done_true": 12,
+  "evaluation_process": "exited",
+  "shared_lock": "free_acquired_and_released",
+  "timeout_marker": "absent",
+  "retries": 0,
+  "development_calls": 0,
+  "demo_calls": 0,
+  "lease_release_safe": true
+}

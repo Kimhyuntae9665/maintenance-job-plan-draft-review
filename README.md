@@ -8,11 +8,27 @@ A native source-cell grid and field comparison for fictional maintenance-registe
 
 ![Actual CPU packet source-cell inventory](artifacts/media/packet-desktop.png)
 
-[390px source grid](artifacts/media/packet-mobile-390.png) · [Actual stale-review flow](artifacts/media/packet-stale-review.png) · [CPU browser checks](artifacts/packet-browser-checks.json) · [Independent engineering review](docs/packet-review.md)
+[Actual CPU-rendered review video](artifacts/media/packet-review.mp4) · [390px source grid](artifacts/media/packet-mobile-390.png) · [Actual stale-review flow](artifacts/media/packet-stale-review.png) · [CPU browser checks](artifacts/packet-browser-checks.json) · [Independent engineering review](docs/packet-review.md)
 
 The original packet was consumer-locally materialized from Library, checked against its 19,602-byte archive SHA256, and frozen unchanged before prompting. Its 15 captures represent 14 logical rows, with three development and twelve evaluation captures. Packet-author consistency checks are not application accuracy. [Integrity receipt](artifacts/packet-integrity.json) · [Original source contract](fixtures/original/maintenance-migration-fixtures-v1/SOURCE-CONTRACT.md) · [Isolated evaluator contract](evaluate-packet.mjs).
 
-**Pre-inference stage: model calls 0. Application conformance evaluation has not yet run.** The optional controlled Qwen comparison is twelve serialized evaluation calls, zero development/retry/demo calls, context 4096, output 640, timeout 60 seconds, temperature 0 and seed 42. Gold is excluded from runtime and model inputs. Raw attempts, invalid JSON, incomplete outputs and timeouts will remain failures; no output-driven oracle changes or fallback replacement in scoring.
+**Actual frozen comparison: 12 Qwen calls completed, zero development/retry/demo inference. All 12 model proposals failed rule validation.** Context 4096, output 640, timeout 60 seconds, concurrency 1, temperature 0 and seed 42 were fixed before scoring. Gold stayed outside runtime/model inputs; raw outputs were scored before gating and preserved without repairs or fallback replacement.
+
+| Evaluation measure (12 captures / 11 logical rows) | Explicit rules | Raw Qwen |
+|---|---:|---:|
+| Exact literal fields | 84/84 | 84/84 |
+| Exact typed frequencies | 12/12 | 0/12 |
+| Expected blockers detected | 8/8 | 0/8 |
+| Blocker false positives / misses | 0 / 0 | 0 / 8 |
+| Unsupported normalized top-level values | 0 | 12 |
+| Unsafe reviewability declarations | 0 | 8 |
+| Automatic / unsafe acceptance | 0 / 0 | 0 / 0 |
+
+All model transports completed with `done:true` / `stop`, and all twelve contents parsed as JSON. Exact citation/source binding passed in every output; that did not make their semantics correct. Frequencies were nonempty malformed objects, including string/raw-valued intervals, omitted relations and wrong trigger structures. The frozen output schema did not require nested typed-frequency properties, a material limitation of this method. These results do not establish Qwen's general capability under another configuration. No prompt, grammar, schema or oracle was tuned after seeing the outputs.
+
+[Baseline results](artifacts/packet-baseline-evaluation.json) · [Raw model results](artifacts/packet-model-evaluation.json) · [All preserved attempts](artifacts/model-attempts) · [Frozen method and limits](docs/experiment.md) · [Completion / safe runtime release](artifacts/runtime-completion.json). The separate development baseline scored 21/21 literal fields and 3/3 frequencies; no development model calls ran. The prototype supports this packet's narrow grammar, not general maintenance extraction, scheduling readiness or measured business savings.
+
+79 Node engineering tests and four Linux CPU transport mocks pass. Actual Chrome checks cover keyboard/focus, delayed/failing requests, stale two-client decisions, repeated receipts, exact export scope after filtering, stored-model rejection and 390px readability. [Stored-output replay checks](artifacts/stored-model-browser-checks.json) and [video provenance](artifacts/packet-video-provenance.json) distinguish CPU media and automated fictional inspections from inference and human domain adjudication.
 
 ## Run
 
@@ -48,7 +64,7 @@ Reads and mutations serialize in each client, server snapshot versions reject st
 
 `model-input.mjs` builds cell IDs, exact source quotes/spans, logical metadata and related conflicting captures. It supplies no baseline answers, implementation case notes, evaluator gold or scores. `model_client.py` uses only the existing local Qwen runtime after explicit coordinator handover. A shared file lock serializes requests; an HTTP timeout creates a persistent barrier and stops the batch until completion is independently verified. No generated code runs.
 
-The UI can inspect stored outputs without inference. Model proposals stay separate from explicit-rule fields and acceptance. Exact-source/citation/schema/rule checks reject unsupported proposals; a stale source removes the stored candidate and current citation contents. Copying a stored proposal into the editor is inspection only. Raw model quality is scored before gating, and workflow correctness is tested separately. No claim of maintenance-SME adjudication, production readiness or general extraction accuracy follows from the small synthetic comparison.
+The UI can inspect stored outputs without inference. Model proposals stay separate from explicit-rule fields and acceptance. Exact-source/citation/schema/rule checks reject unsupported proposals; a stale source removes the stored candidate and current citation contents. Copying a stored proposal into the editor is inspection only; differing/invalid unsaved fields disable acceptance until explicit restore/validation and fresh inspection. Raw model quality is scored before gating, and workflow correctness is tested separately. No claim of maintenance-SME adjudication, production readiness or general extraction accuracy follows from the small synthetic comparison.
 
 ## Business precedent and rights
 
