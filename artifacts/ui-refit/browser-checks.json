@@ -1,0 +1,40 @@
+{
+  "kind": "Actual CPU Chrome maintenance checks; synthetic response states explicitly named",
+  "additional_model_calls": 0,
+  "challenge_contents_used": false,
+  "executed_in_CI": false,
+  "screenshots": [
+    "08-v2-semantic-review.png",
+    "09-v2-operating-hour.png",
+    "10-mobile-390.png",
+    "01-source-selection.png",
+    "02-exact-source-cell.png",
+    "03-accepted-normalization.png",
+    "05-exact-export-scope.png",
+    "06-stored-rejection-fields.png",
+    "07-current-and-historical-revision.png",
+    "04-ambiguous-trigger-blocked.png"
+  ],
+  "checks": {
+    "v2_actual_tab_enter_focus": true,
+    "source_pointer_named_keyboard_destination": true,
+    "repeated_stored_inspection_no_acceptance": true,
+    "delayed_old_read_preserves_new_selection_and_explicit_focus": true,
+    "synthetic_failed_honest_nonreviewable_state": true,
+    "synthetic_incomplete_honest_nonreviewable_state": true,
+    "synthetic_stale_honest_nonreviewable_state": true,
+    "v2_mobile": {
+      "viewport": 390,
+      "document_width": 390,
+      "minimum_meaningful_text_px": 14
+    },
+    "default_keyboard_and_repeated_review": true,
+    "exact_scope_and_visible_bound_download_ack": true,
+    "actual_stored_rejection_field_evidence": true,
+    "current_header_and_historical_model_original_revision": true,
+    "source_change_reconciles_filter_and_preserves_historical_export": true,
+    "two_client_stale_review_no_reacceptance": true,
+    "main_mobile_390_no_clipping": true
+  },
+  "page_errors": []
+}

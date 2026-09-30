@@ -1,0 +1,63 @@
+{
+  "kind": "Actual native Chrome CPU workflow, new reference presentation",
+  "additional_model_calls": 0,
+  "challenge_contents_used": false,
+  "source": "unchanged original public fictional packet and stored outputs; synthetic response states only in checks",
+  "assets": [
+    {
+      "path": "artifacts/ui-refit/05-exact-export-scope.png",
+      "bytes": 149832,
+      "sha256": "61f61cf0c521e3acba8452148fc0dc893a2a4fcdd7524ee22bf9663636b907ab"
+    },
+    {
+      "path": "artifacts/ui-refit/02-exact-source-cell.png",
+      "bytes": 145887,
+      "sha256": "946baeaf0912b70ace60a2976a29b312ceb398e2f3310a309d6865af7cdee58a"
+    },
+    {
+      "path": "artifacts/ui-refit/09-v2-operating-hour.png",
+      "bytes": 148406,
+      "sha256": "2787e5dbb271ecd7c8acf1b5ca1cdc2d0d71e7cadea03335d3407ba0507d1373"
+    },
+    {
+      "path": "artifacts/ui-refit/08-v2-semantic-review.png",
+      "bytes": 138344,
+      "sha256": "fbd6d39e9341dde4e495da3784afca890d8e86b5e2250e1159849c178e7b1f89"
+    },
+    {
+      "path": "artifacts/ui-refit/06-stored-rejection-fields.png",
+      "bytes": 162592,
+      "sha256": "1177acf30bea45373e3709c63cbb2f8e69683850d8a94899ac385a424903a8bd"
+    },
+    {
+      "path": "artifacts/ui-refit/10-mobile-390.png",
+      "bytes": 52882,
+      "sha256": "fa512523de14d0fde50090401946a833d1a50d187891b00fc3447d41c8562710"
+    },
+    {
+      "path": "artifacts/ui-refit/review-workflow.mp4",
+      "bytes": 661511,
+      "sha256": "5f2d508b7d234f1c3cf4cf060ec0f59402a255e00d1e838d4b25ab5a24a90f1b"
+    },
+    {
+      "path": "artifacts/ui-refit/04-ambiguous-trigger-blocked.png",
+      "bytes": 140553,
+      "sha256": "767db0448ef83af749c3ae6cf1d35065545dec1424a3bf3d8d23c97abe78c208"
+    },
+    {
+      "path": "artifacts/ui-refit/03-accepted-normalization.png",
+      "bytes": 151274,
+      "sha256": "e12b1186a6295eba5911901b13f18761b80688bc076fdce0bd24cb7b82ce9e2a"
+    },
+    {
+      "path": "artifacts/ui-refit/07-current-and-historical-revision.png",
+      "bytes": 143796,
+      "sha256": "f65cb2d65b802da5c0a91125b922c9e3fcaa540bd0e0250e01fbe0b8e5d7e751"
+    },
+    {
+      "path": "artifacts/ui-refit/01-source-selection.png",
+      "bytes": 139588,
+      "sha256": "83a17aa3f7a508a064175dcbdd5476beaa7cc5890a71eb556e8240d7ebf004a5"
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node packet-server.mjs",
+    "start": "node ui/reference-layout/server.mjs",
     "test": "node --test test/*.test.mjs",
     "v2:desk": "node review-ui/server.mjs",
     "v2:desk:frozen": "node development/v2-desk.mjs",

@@ -5,7 +5,7 @@ import {fileURLToPath} from 'node:url';
 import {createDevelopmentDesk} from '../development/v2-desk.mjs';
 export function createReviewDesk(){
   const frozen=createDevelopmentDesk(),delegate=frozen.listeners('request')[0];
-  const files={'/ui-evidence.mjs':['../ui-evidence.mjs','text/javascript'],'/':['index.html','text/html'],'/review-ui/client.mjs':['client.mjs','text/javascript'],'/review-ui/view-state.mjs':['view-state.mjs','text/javascript'],'/development/v2-contract.mjs':['../development/v2-contract.mjs','text/javascript'],'/development/v2-json.mjs':['../development/v2-json.mjs','text/javascript']};
+  const files={'/v2-desk.css':['style.css','text/css'],'/ui-evidence.mjs':['../ui-evidence.mjs','text/javascript'],'/':['index.html','text/html'],'/review-ui/client.mjs':['client.mjs','text/javascript'],'/review-ui/view-state.mjs':['view-state.mjs','text/javascript'],'/development/v2-contract.mjs':['../development/v2-contract.mjs','text/javascript'],'/development/v2-json.mjs':['../development/v2-json.mjs','text/javascript']};
   return createServer((req,res)=>{
     const item=files[new URL(req.url,'http://localhost').pathname];
     if(req.method!=='GET'||!item)return delegate(req,res);

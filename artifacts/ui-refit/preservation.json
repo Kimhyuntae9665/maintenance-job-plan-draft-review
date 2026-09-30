@@ -1,0 +1,74 @@
+{
+  "kind": "CPU presentation update; immutable experiment preserved",
+  "before_commit": "6cb324b4a67ac5ed52beb74538f564c6fcf36607",
+  "additional_model_calls": 0,
+  "frozen_v2": {
+    "version": "P09-V2-DEV-2",
+    "declared_commit": "09df59544a6691968dd2f9ef3075cfa251acc5d5",
+    "digest": "68ee4c9474905e76274a12384f20e5a79c750c2eb9933cde3be510125ed07caf",
+    "frozen_files": 28,
+    "model_calls": 0
+  },
+  "node_tests": 113,
+  "cpu_mock_tests": 11,
+  "local_chrome_checks": 15,
+  "browser_checks_executed_in_CI": false,
+  "reference_tokens": {
+    "page": "#f1f4f6",
+    "text": "#142635",
+    "primary": "#173f60",
+    "border": "#9eaeba",
+    "evidence": "#e7edf1",
+    "main_max_width": 1120,
+    "padding": 24,
+    "panel_gap": 20
+  },
+  "ui_files": [
+    {
+      "path": "package.json",
+      "sha256": "6190153258d751a45afabda44a045fdc01b13e3c8581af402f96172a6e464da4",
+      "bytes": 404
+    },
+    {
+      "path": "review-ui/index.html",
+      "sha256": "9b67ba2766270cabad2365ec26af722ed97505d0e2611e64ec091ddafdda2077",
+      "bytes": 2250
+    },
+    {
+      "path": "review-ui/server.mjs",
+      "sha256": "2f4dcf094eb90a4b47c5878f65e0ba0f03cc496c1c685ca4f8bf3fc292a17746",
+      "bytes": 1470
+    },
+    {
+      "path": "review-ui/style.css",
+      "sha256": "affa1bff8ebd5f5dd45786978473992cc7f804846864f3e5596901dc4dbabc42",
+      "bytes": 2645
+    },
+    {
+      "path": "ui/reference-layout/index.html",
+      "sha256": "73838e95bfea280b3dae543f1c361fdf1b9932465c987acc042eb09002935f5d",
+      "bytes": 6053
+    },
+    {
+      "path": "ui/reference-layout/style.css",
+      "sha256": "7da50146a4e446f575e14cec7fea0b9eaaf0ac8ac234253e669f299c0841d675",
+      "bytes": 4099
+    },
+    {
+      "path": "ui/reference-layout/server.mjs",
+      "sha256": "c83ad22fd338ebfb195cd4e457404c25f66e66753e778516b21e4fdcc0d1ed49",
+      "bytes": 1073
+    },
+    {
+      "path": "capture-reference-ui.py",
+      "sha256": "84ad9b5c61e0a89862d6f7b84d59b3c7cc689280a3c66ea54738e721450010ee",
+      "bytes": 13842
+    },
+    {
+      "path": "test/reference-layout.test.mjs",
+      "sha256": "da5b45187b4007036f0c32b3bf82d8920436d79c4688eadff39008975052e820",
+      "bytes": 1112
+    }
+  ],
+  "scope": "Versioned presentation only; original API and client, fixture, prompt, schema, model outputs and evaluator unchanged. Blocked challenge untouched."
+}
