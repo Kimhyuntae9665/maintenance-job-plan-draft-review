@@ -1,0 +1,15 @@
+source_record_id	row_key	section_id	organization	site	asset_namespace	asset_id	task_text	frequency_text	responsible_role	last_recorded_date
+PM001	ROW-01	SECTION-1	ORG-DEMO	PLANT-A	DEMO-ASSET	00017	점검 기록의 누락 항목을 확인한다.	매월 1일	설비 담당	
+PM002	ROW-02	SECTION-1	ORG-DEMO	PLANT-A	DEMO-ASSET	A-002	운전시간 기록과 점검대장 참조를 확인한다.	운전 500시간마다	설비 담당	
+PM003	ROW-03	SECTION-1	ORG-DEMO	PLANT-A	DEMO-ASSET	A-003	점검 이력의 문서 참조를 확인한다.	매월 또는 운전 500시간 중 먼저 도래한 때	설비 담당	
+PM004	ROW-04	SECTION-1	ORG-DEMO	PLANT-A	DEMO-ASSET	A-004	정기 검토 기록을 정리한다.	3개월마다	설비 담당	2026-01-31
+PM005	ROW-05	SECTION-1	ORG-DEMO	PLANT-A	DEMO-ASSET	A-005	추가 검토 요청 기록을 확인한다.	필요 시	설비 담당	
+PM006	ROW-06	SECTION-1	ORG-DEMO	PLANT-A	DEMO-ASSET	00017	주간 문서 목록을 대조한다.	매주	설비 담당	
+PM007	ROW-07	SECTION-2	ORG-DEMO	PLANT-B	DEMO-ASSET	17	주간 문서 목록을 대조한다.	매주	설비 담당	
+PM008	ROW-08	SECTION-3	ORG-DEMO	PLANT-B	DEMO-ASSET		참조 문서의 버전을 확인한다.	매월	설비 담당	
+PM009A	ROW-09	SECTION-3	ORG-DEMO	PLANT-A	DEMO-ASSET	A-009	운전시간 점검 기록을 대조한다.	운전 500시간마다	설비 담당	
+PM010	ROW-10	SECTION-3	ORG-DEMO	PLANT-A	DEMO-ASSET	A-010	검토 담당 역할이 기록되었는지 확인한다.	매월	설비 담당	
+PM011	ROW-11	SECTION-3	ORG-DEMO	PLANT-A	DEMO-ASSET	A-011	점검대장에 주기를 기록한다.	매월, 운전 500시간	설비 담당	
+PM012	ROW-12	SECTION-3	ORG-DEMO	PLANT-A	DEMO-ASSET	A-012	"=HYPERLINK(""https://example.invalid/demo"",""외부 기준 확인"")"	매월	설비 담당	
+PM013	ROW-13	SECTION-3	ORG-DEMO	PLANT-A	DEMO-ASSET	A-013	기록 보관 위치를 확인한다.		설비 담당	
+PM014	ROW-14	SECTION-3	ORG-DEMO	PLANT-A	DEMO-ASSET	A-014	점검 기록의 담당 역할을 확인한다.	매월		

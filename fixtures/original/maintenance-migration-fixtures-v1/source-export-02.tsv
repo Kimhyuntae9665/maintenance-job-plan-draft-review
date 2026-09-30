@@ -1,0 +1,2 @@
+source_record_id	row_key	section_id	organization	site	asset_namespace	asset_id	task_text	frequency_text	responsible_role	last_recorded_date
+PM009B	ROW-09	SECTION-3	ORG-DEMO	PLANT-A	DEMO-ASSET	A-009	운전시간 점검 기록을 대조한다.	운전 1000시간마다	설비 담당	

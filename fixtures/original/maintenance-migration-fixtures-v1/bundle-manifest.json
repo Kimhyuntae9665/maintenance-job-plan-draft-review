@@ -1,0 +1,68 @@
+{
+  "packet_id": "PM-MIGRATION-v1",
+  "algorithm": "SHA-256",
+  "manifest_excludes_itself": true,
+  "file_count_excluding_manifest": 12,
+  "files": [
+    {
+      "path": "IMPLEMENTATION.md",
+      "bytes": 6734,
+      "sha256": "54587df06047e75e461f416bf273cef37e1ec233040386c4874bca127fdb6f91"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 400,
+      "sha256": "a9d4b1bc95583ebe97368ba6ab61092c11cef80ca76408258e6832caad4865c6"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 2523,
+      "sha256": "5175932fe0f629e26c2f70d3be900ab23f377f833832d6a7270545cae905e52a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4577,
+      "sha256": "455f140c0d35c7a0a50f091a8447d6fe360a2e7e3abc4c2543adf7c23e11ddec"
+    },
+    {
+      "path": "SOURCE-CONTRACT.md",
+      "bytes": 4319,
+      "sha256": "8a84abea7220e4832aeb2c05804a55eacda3fd3e8d6186132cb5d60329afbdc6"
+    },
+    {
+      "path": "evaluation/README.md",
+      "bytes": 1890,
+      "sha256": "02feae0e0ad64e0ef3ce6c4bda009b5b21e15a1ce501a16593fac64006b5faa3"
+    },
+    {
+      "path": "evaluation/frozen-gold-v1.json",
+      "bytes": 16601,
+      "sha256": "9b8011f677a742ce668091f1fb333263238a04d697c2559421b84f8411569cec"
+    },
+    {
+      "path": "evaluation/validation-report.json",
+      "bytes": 1210,
+      "sha256": "3a1b8fcdb5aef4e6df08e30421da2fe53fc2817ed434811cb5cb446ef0c137eb"
+    },
+    {
+      "path": "public-output-contract.json",
+      "bytes": 3428,
+      "sha256": "ebcd497f02a83390546256678c63b79308c568f7a1681ab60df9d4652bd24b1a"
+    },
+    {
+      "path": "source-export-01.tsv",
+      "bytes": 2015,
+      "sha256": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82"
+    },
+    {
+      "path": "source-export-02.tsv",
+      "bytes": 283,
+      "sha256": "e63c5b2434d2ddbd7715b95108fa6a2964e0569adb67bb0013914fa0060d464a"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 3909,
+      "sha256": "808edb73bdbb2eaef582791269bd09e318de65b03bbf681a77577ee33516fbd5"
+    }
+  ]
+}

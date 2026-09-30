@@ -1,0 +1,11 @@
+{
+  "library_file_id": "libfile_3089652d66848191809e65bbe6279be6",
+  "version": 0,
+  "archive_bytes": 19602,
+  "archive_sha256": "df871b1258f28bbbf88041fb8556286943e5a6350386032e90cd34d2a8d2c698",
+  "manifest_files_verified": 12,
+  "consumer_local_materialization": true,
+  "case_specific_gold_parsed": false,
+  "model_calls": 0,
+  "kind": "Packet integrity only; no application/model score"
+}

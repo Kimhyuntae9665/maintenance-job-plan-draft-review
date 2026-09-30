@@ -1,0 +1,548 @@
+{
+  "schema_version": "PM-NORMALIZATION-DEMO-1",
+  "gold_kind": "Original author-written controlled expectations frozen before model experiments; not independent maintenance-SME validation",
+  "model_runs_at_creation": 0,
+  "case_count": 15,
+  "development_case_count": 3,
+  "evaluation_case_count": 12,
+  "runtime_boundary": "Model receives only the selected source row/cells plus admitted shared metadata and public output schema, never this gold file or evaluator issue labels. Conflict adjudication reads both admitted exports in deterministic backend.",
+  "literal_fields": [
+    "organization",
+    "site",
+    "asset_namespace",
+    "asset_id",
+    "task_text",
+    "responsible_role",
+    "last_recorded_date"
+  ],
+  "rules": [
+    "Keep identifiers as strings; never strip leading zeros.",
+    "Trim boundary whitespace only for comparison and preserve original raw cells.",
+    "Source role is a role label, not a person or authority.",
+    "Calendar interval is not a fixed number of days.",
+    "Never derive a due date in this slice.",
+    "Missing values are null and distinct from numeric zero.",
+    "Formula-like task text is preserved as source data but blocks acceptance; no formula or URL execution.",
+    "Conflicting logical identities block all involved records."
+  ],
+  "scoring": {
+    "report_separately": [
+      "exact literal-field accuracy",
+      "exact typed-frequency accuracy",
+      "blocking-issue recall and false-positive count",
+      "unsupported normalized value count",
+      "unsafe acceptance count",
+      "reviewed export exactness"
+    ],
+    "success_requirement": "All deterministic oracle and review-state gates pass before any model proposal can be accepted. Report model results separately and preserve failed attempts; never infer generalization from three development rows.",
+    "denominator_policy": "Report record and logical-row counts separately: fifteen source records represent fourteen row keys, with ROW-09 appearing in two conflicting exports."
+  },
+  "cases": [
+    {
+      "case_id": "PM001",
+      "split": "development",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 2,
+        "data_row_1_based": 1
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "00017",
+        "task_text": "점검 기록의 누락 항목을 확인한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "calendar_rule",
+          "rule": "day_of_month",
+          "day": 1
+        },
+        "blocking_issues": [],
+        "scheduling_unknowns": [
+          "holiday_shift_policy_unknown"
+        ],
+        "reviewability": "reviewable",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM002",
+      "split": "development",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 3,
+        "data_row_1_based": 2
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-002",
+        "task_text": "운전시간 기록과 점검대장 참조를 확인한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "meter_interval",
+          "value": 500,
+          "unit": "hour",
+          "basis": "operating_runtime"
+        },
+        "blocking_issues": [],
+        "scheduling_unknowns": [
+          "meter_id_unknown",
+          "meter_baseline_unknown"
+        ],
+        "reviewability": "reviewable",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM003",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 4,
+        "data_row_1_based": 3
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-003",
+        "task_text": "점검 이력의 문서 참조를 확인한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "combined",
+          "relation": "whichever_first",
+          "triggers": [
+            {
+              "kind": "calendar_interval",
+              "value": 1,
+              "unit": "month"
+            },
+            {
+              "kind": "meter_interval",
+              "value": 500,
+              "unit": "hour",
+              "basis": "operating_runtime"
+            }
+          ]
+        },
+        "blocking_issues": [],
+        "scheduling_unknowns": [
+          "calendar_anchor_unknown",
+          "meter_id_unknown",
+          "meter_baseline_unknown"
+        ],
+        "reviewability": "reviewable",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM004",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 5,
+        "data_row_1_based": 4
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-004",
+        "task_text": "정기 검토 기록을 정리한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": "2026-01-31",
+        "frequency": {
+          "kind": "calendar_interval",
+          "value": 3,
+          "unit": "month"
+        },
+        "blocking_issues": [],
+        "scheduling_unknowns": [
+          "month_end_policy_unknown"
+        ],
+        "reviewability": "reviewable",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM005",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 6,
+        "data_row_1_based": 5
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-005",
+        "task_text": "추가 검토 요청 기록을 확인한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "event_trigger",
+          "event": null
+        },
+        "blocking_issues": [
+          "event_condition_unspecified"
+        ],
+        "scheduling_unknowns": [],
+        "reviewability": "needs_clarification",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM006",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 7,
+        "data_row_1_based": 6
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "00017",
+        "task_text": "주간 문서 목록을 대조한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "calendar_interval",
+          "value": 1,
+          "unit": "week"
+        },
+        "blocking_issues": [],
+        "scheduling_unknowns": [
+          "calendar_anchor_unknown"
+        ],
+        "reviewability": "reviewable",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM007",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 8,
+        "data_row_1_based": 7
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-B",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "17",
+        "task_text": "주간 문서 목록을 대조한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "calendar_interval",
+          "value": 1,
+          "unit": "week"
+        },
+        "blocking_issues": [],
+        "scheduling_unknowns": [
+          "calendar_anchor_unknown"
+        ],
+        "reviewability": "reviewable",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM008",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 9,
+        "data_row_1_based": 8
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-B",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": null,
+        "task_text": "참조 문서의 버전을 확인한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "calendar_interval",
+          "value": 1,
+          "unit": "month"
+        },
+        "blocking_issues": [
+          "asset_id_missing"
+        ],
+        "scheduling_unknowns": [
+          "calendar_anchor_unknown"
+        ],
+        "reviewability": "needs_clarification",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM009A",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 10,
+        "data_row_1_based": 9
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-009",
+        "task_text": "운전시간 점검 기록을 대조한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "meter_interval",
+          "value": 500,
+          "unit": "hour",
+          "basis": "operating_runtime"
+        },
+        "blocking_issues": [
+          "same_identity_content_conflict"
+        ],
+        "scheduling_unknowns": [
+          "meter_id_unknown",
+          "meter_baseline_unknown"
+        ],
+        "reviewability": "needs_clarification",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM010",
+      "split": "development",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 11,
+        "data_row_1_based": 10
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-010",
+        "task_text": "검토 담당 역할이 기록되었는지 확인한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "calendar_interval",
+          "value": 1,
+          "unit": "month"
+        },
+        "blocking_issues": [],
+        "scheduling_unknowns": [
+          "calendar_anchor_unknown"
+        ],
+        "reviewability": "reviewable",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM011",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 12,
+        "data_row_1_based": 11
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-011",
+        "task_text": "점검대장에 주기를 기록한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "combined",
+          "relation": null,
+          "triggers": [
+            {
+              "kind": "calendar_interval",
+              "value": 1,
+              "unit": "month"
+            },
+            {
+              "kind": "meter_interval",
+              "value": 500,
+              "unit": "hour",
+              "basis": "operating_runtime"
+            }
+          ]
+        },
+        "blocking_issues": [
+          "trigger_relation_unspecified"
+        ],
+        "scheduling_unknowns": [
+          "calendar_anchor_unknown",
+          "meter_id_unknown",
+          "meter_baseline_unknown"
+        ],
+        "reviewability": "needs_clarification",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM012",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 13,
+        "data_row_1_based": 12
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-012",
+        "task_text": "=HYPERLINK(\"https://example.invalid/demo\",\"외부 기준 확인\")",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "calendar_interval",
+          "value": 1,
+          "unit": "month"
+        },
+        "blocking_issues": [
+          "formula_like_task_cell"
+        ],
+        "scheduling_unknowns": [
+          "calendar_anchor_unknown"
+        ],
+        "reviewability": "needs_clarification",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM013",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 14,
+        "data_row_1_based": 13
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-013",
+        "task_text": "기록 보관 위치를 확인한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": null,
+        "blocking_issues": [
+          "frequency_missing"
+        ],
+        "scheduling_unknowns": [],
+        "reviewability": "needs_clarification",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM014",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-01.tsv",
+        "tsv_line_1_based": 15,
+        "data_row_1_based": 14
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-014",
+        "task_text": "점검 기록의 담당 역할을 확인한다.",
+        "responsible_role": null,
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "calendar_interval",
+          "value": 1,
+          "unit": "month"
+        },
+        "blocking_issues": [
+          "responsible_role_missing"
+        ],
+        "scheduling_unknowns": [
+          "calendar_anchor_unknown"
+        ],
+        "reviewability": "needs_clarification",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    },
+    {
+      "case_id": "PM009B",
+      "split": "evaluation",
+      "source": {
+        "file": "source-export-02.tsv",
+        "tsv_line_1_based": 2,
+        "data_row_1_based": 1
+      },
+      "expected": {
+        "organization": "ORG-DEMO",
+        "site": "PLANT-A",
+        "asset_namespace": "DEMO-ASSET",
+        "asset_id": "A-009",
+        "task_text": "운전시간 점검 기록을 대조한다.",
+        "responsible_role": "설비 담당",
+        "last_recorded_date": null,
+        "frequency": {
+          "kind": "meter_interval",
+          "value": 1000,
+          "unit": "hour",
+          "basis": "operating_runtime"
+        },
+        "blocking_issues": [
+          "same_identity_content_conflict"
+        ],
+        "scheduling_unknowns": [
+          "meter_id_unknown",
+          "meter_baseline_unknown"
+        ],
+        "reviewability": "needs_clarification",
+        "next_due_date": null,
+        "assigned_person": null,
+        "target_import_status": "not_submitted"
+      }
+    }
+  ]
+}

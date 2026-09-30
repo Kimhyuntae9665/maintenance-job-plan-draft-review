@@ -1,0 +1,99 @@
+{
+  "contract_version": "PM-NORMALIZATION-DEMO-1",
+  "purpose": "Public output field contract; not a JSON Schema certification or Maximo import schema",
+  "source_ref": [
+    "source_record_id",
+    "file_sha256",
+    "logical_document_id",
+    "source_revision",
+    "sheet_name",
+    "row_key",
+    "cell_column",
+    "raw_cell_text",
+    "tsv_line_1_based",
+    "data_row_1_based",
+    "cell_column_1_based"
+  ],
+  "normalized_fields": {
+    "organization": "literal string",
+    "site": "literal string",
+    "asset_namespace": "literal string",
+    "asset_id": "literal string or null; preserve leading zeros",
+    "task_text": "literal text; formula-like input remains inert and blocks acceptance",
+    "responsible_role": "literal role string or null; never a person assignment",
+    "last_recorded_date": "literal supplied date or null; not a declared scheduling anchor",
+    "frequency": {
+      "kind": [
+        "calendar_rule",
+        "calendar_interval",
+        "meter_interval",
+        "event_trigger",
+        "combined"
+      ],
+      "calendar_rule": [
+        "rule=day_of_month",
+        "day integer"
+      ],
+      "calendar_interval": [
+        "value integer",
+        "unit=month|week"
+      ],
+      "meter_interval": [
+        "value integer",
+        "unit=hour",
+        "basis=operating_runtime"
+      ],
+      "event_trigger": [
+        "event string or null"
+      ],
+      "combined": [
+        "relation=whichever_first or null",
+        "triggers array of typed calendar/meter intervals"
+      ],
+      "nullable": true,
+      "null_reason": "Missing or unsupported source expression; do not invent a trigger."
+    },
+    "next_due_date": "always null in this slice",
+    "assigned_person": "always null in this slice",
+    "target_import_status": "always not_submitted"
+  },
+  "backend_owned": [
+    "source identity and byte hashes",
+    "conflict grouping",
+    "access scope",
+    "blocking issues",
+    "rule version",
+    "reviewability",
+    "review receipt and current content binding",
+    "export status"
+  ],
+  "review_states": [
+    "unreviewed",
+    "returned",
+    "accepted",
+    "stale"
+  ],
+  "model_boundary": "Propose supported fields with exact cell evidence only; never control authorization, conflict precedence, receipt validity or target status.",
+  "normalization_receipt_contract": {
+    "bound_fields": [
+      "source_record_id",
+      "source_file_sha256",
+      "logical_record_identity",
+      "normalized_content_sha256",
+      "normalizer_rule_version",
+      "proposal_revision",
+      "organization",
+      "site",
+      "reviewer_id",
+      "reviewer_scope",
+      "reviewed_at"
+    ],
+    "content_hash_method": "SHA-256 of UTF-8 deterministic JSON serialization of the exact proposed normalized fields and evidence references. Specify and version canonicalization in implementation; a hash over row ID alone is invalid.",
+    "invalidation": "Changes to source bytes, proposal, evidence, rule version or applicable scope require a fresh review. Preserve old receipt as history; do not transfer approval."
+  },
+  "readiness_dimensions": {
+    "normalization": "reviewable is a proposal eligible for review; accepted is an explicit current reviewer decision",
+    "scheduling": "not assessed; next_due_date remains null even for accepted normalization",
+    "target_import": "not submitted; no schema validation or target acknowledgment is claimed"
+  }
+}

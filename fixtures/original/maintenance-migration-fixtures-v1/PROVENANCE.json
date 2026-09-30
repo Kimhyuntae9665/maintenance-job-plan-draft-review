@@ -1,0 +1,54 @@
+{
+  "packet_id": "PM-MIGRATION-v1",
+  "prepared_date_utc": "2026-09-30",
+  "source_class": "original fictional controlled fixtures",
+  "original_material": [
+    "source-export-01.tsv",
+    "source-export-02.tsv",
+    "source-manifest.json",
+    "public-output-contract.json",
+    "SOURCE-CONTRACT.md",
+    "evaluation/frozen-gold-v1.json",
+    "README.md",
+    "IMPLEMENTATION.md",
+    "evaluation/README.md"
+  ],
+  "license": "CC0-1.0; applies only to original packet content; see LICENSE.txt",
+  "copied_customer_data": false,
+  "copied_vendor_assets": false,
+  "real_equipment_instructions": false,
+  "model_results_in_packet": false,
+  "authorship_limit": "Author-written designed expectations; not independent maintenance-SME review. The fixture dates and identities are fictional.",
+  "references": [
+    {
+      "url": "https://www.ibm.com/fr-fr/case-studies/quant-service",
+      "role": "Named vendor/customer account motivating reviewed extraction of asset, frequency and responsibility fields",
+      "publication_date": "undated; page copyright 2025",
+      "verified_date_utc": "2026-09-30",
+      "retrieval_status": "success",
+      "evidence_tier": "reported MVP; no independent controlled evaluation denominator",
+      "not_evidence_for": [
+        "these source rows",
+        "this oracle",
+        "local 4B model performance",
+        "complete scaled deployment",
+        "validated import adapter"
+      ]
+    },
+    {
+      "url": "https://www.ibm.com/docs/en/masv-and-l/maximo-manage/cd?topic=pm-master-preventive-maintenance-records",
+      "role": "Product-semantics reference for templates versus work-order generation",
+      "verified_date_utc": "2026-09-30",
+      "retrieval_status": "Previously reviewed in research; packaging re-open returned HTTP 403",
+      "evidence_tier": "continuous-delivery product documentation; no customer-version verification"
+    },
+    {
+      "url": "https://www.ibm.com/docs/en/masv-and-l/maximo-manage/cd?topic=pms-defining-frequency-meter-based-master",
+      "role": "Product-semantics reference for meter schedules and additional scheduling inputs",
+      "verified_date_utc": "2026-09-30",
+      "retrieval_status": "Previously reviewed in research; packaging re-open returned HTTP 403",
+      "evidence_tier": "continuous-delivery product documentation; no target adapter tested"
+    }
+  ],
+  "rights_boundary": "Linked sources are cited, not bundled or relicensed. Product names identify references only and imply no affiliation or endorsement."
+}

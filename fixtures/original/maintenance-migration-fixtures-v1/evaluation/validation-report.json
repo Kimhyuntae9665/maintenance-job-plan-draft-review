@@ -1,0 +1,35 @@
+{
+  "validation_kind": "packet_integrity_and_author_contract_consistency",
+  "validated_date_utc": "2026-09-30",
+  "result": "pass",
+  "source_record_count": 15,
+  "logical_row_count": 14,
+  "development_record_count": 3,
+  "evaluation_record_count": 12,
+  "expected_reviewability": {
+    "reviewable": 7,
+    "needs_clarification": 8
+  },
+  "checks": [
+    "source SHA-256 matches manifest",
+    "declared TSV dialect parses expected header and row counts",
+    "oracle locator maps to the intended source record",
+    "all seven literal fields match parsed source text or null",
+    "typed frequency matches the documented designed grammar",
+    "reviewability agrees with blocker presence",
+    "due date and assignee remain null; target import remains not_submitted"
+  ],
+  "source_hashes": {
+    "source-export-01.tsv": "9c2bc9cb7b88fa59d25949d21035f8d0908faa640f720aeeef0ff361f49a7e82",
+    "source-export-02.tsv": "e63c5b2434d2ddbd7715b95108fa6a2964e0569adb67bb0013914fa0060d464a"
+  },
+  "not_tested": [
+    "model inference",
+    "application implementation",
+    "reviewer interaction",
+    "target CMMS import",
+    "independent SME adjudication",
+    "business time saved",
+    "XLSX parsing"
+  ]
+}
