@@ -1,0 +1,33 @@
+{
+  "kind": "Confirmed CPU scaffold media identities; no evaluation or model claims",
+  "media": [
+    {
+      "path": "docs/architecture.png",
+      "library_file_id": "libfile_0f21967c10b481919a97c6f662c7d79d",
+      "version": 0,
+      "sha256": "fcb671c3243d9434adffa0a093a8949f33b5ce03e674795bb90adec8f1b752ea",
+      "bytes": 25642
+    },
+    {
+      "path": "docs/architecture.svg",
+      "library_file_id": "libfile_042af95ebcc481918942d7a9ecd5a9f6",
+      "version": 0,
+      "sha256": "7897bb1e81f0d650ddc829c1e52997d994dbcfa07312b30d6b8a309ab2555d5a",
+      "bytes": 3101
+    },
+    {
+      "path": "artifacts/media/scaffold-desktop.png",
+      "library_file_id": "libfile_15857b50db488191a41b39c07369f607",
+      "version": 0,
+      "sha256": "0a8fe79d3422eb46265e1c426019b6b7d06d6185db92fa9140abea6037fd0ebf",
+      "bytes": 262559
+    },
+    {
+      "path": "artifacts/media/scaffold-review.mp4",
+      "library_file_id": "libfile_26f71dabb46c819188e43358cabcd339",
+      "version": 0,
+      "sha256": "658ea33ef76f6f0dfdd22c0087548cdd3a321e31148bdffa3c4e6de80e013fd1",
+      "bytes": 566406
+    }
+  ]
+}

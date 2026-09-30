@@ -1,0 +1,18 @@
+{
+  "kind": "Actual CPU engineering checks of scaffold examples; not fixture evaluation",
+  "browser": "installed Chrome with CPU rendering",
+  "model_calls": 0,
+  "evaluation_results": null,
+  "checks": {
+    "keyboard_exact_cell_navigation": true,
+    "repeated_immutable_receipt": true,
+    "export_is_local_acknowledgement_only": true,
+    "two_client_stale_requires_fresh_inspection": true,
+    "same_revision_conflict_blocks_review": true,
+    "mobile_viewport": 390,
+    "mobile_document_width": 390,
+    "minimum_meaningful_text_px": 14,
+    "source_grid_scrolls_without_viewport_shrink": true
+  },
+  "page_errors": []
+}

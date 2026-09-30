@@ -1,0 +1,14 @@
+{
+  "kind": "Actual CPU browser-automated scaffold demonstration; not fixture evaluation",
+  "model_calls": 0,
+  "evaluation_results": null,
+  "fictional_examples": 4,
+  "semantic_acceptance": "automated synthetic inspection; not independent domain adjudication",
+  "cases_shown": [
+    "demo-1",
+    "demo-3"
+  ],
+  "unresolved_event_retained": true,
+  "target_system_import": false,
+  "maintenance_authorization": false
+}

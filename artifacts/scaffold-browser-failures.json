@@ -1,0 +1,10 @@
+{
+  "kind": "CPU scaffold development failures before repair; not fixture evaluation",
+  "model_calls": 0,
+  "failures": [
+    {"attempt": 1, "check": "390px document width", "observed_document_width": 912, "cause": "grid track inherited the table minimum width", "repair": "minmax(0,1fr) track and zero minimum child width"},
+    {"attempt": 2, "check": "390px document width", "observed_document_width": 525, "cause": "historical receipt hash did not wrap", "repair": "wrap long receipt identifiers without shrinking text"},
+    {"check": "diagram pixels", "cause": "missing separators concatenated SVG curve coordinates", "repair": "explicit path coordinate separators; rerendered and inspected"}
+  ],
+  "final_passing_checks": "scaffold-browser-checks.json"
+}

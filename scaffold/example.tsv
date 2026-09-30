@@ -1,0 +1,6 @@
+row_id	equipment_id	organization	site	task_text	frequency	responsible_role
+demo-1	00017	DEMO-ORG	DEMO-A	Review fictional asset register labels	Monthly	Planning reviewer
+demo-2	17	DEMO-ORG	DEMO-B	Review fictional task draft wording	500 operating hours	Planning reviewer
+demo-3	00017	DEMO-ORG	DEMO-A	Review fictional document index	필요 시	
+
+demo-4				Review fictional section heading	Every 3 months from Jan 31	
