@@ -13,6 +13,7 @@ export function createDesk(initialSources=[demo()]){
   const json=(res,status,data)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(data));};
   const handler=async(req,res)=>{try{
     const url=new URL(req.url,'http://localhost');
+    if(url.pathname.startsWith('/source-desk/api/'))url.pathname=url.pathname.slice('/source-desk'.length);
     if(req.method==='GET'&&url.pathname==='/api/state')return json(res,200,snapshot());
     if(req.method==='POST'&&url.pathname.startsWith('/api/')){
       const chunks=[];let byteCount=0;for await(const chunk of req){byteCount+=chunk.length;if(byteCount>1200000)throw new Error('Request too large');chunks.push(chunk);}const raw=new TextDecoder('utf-8',{fatal:true}).decode(Buffer.concat(chunks));const body=JSON.parse(raw||'{}');
@@ -21,7 +22,7 @@ export function createDesk(initialSources=[demo()]){
       if(url.pathname==='/api/source'){
         const incoming=importSource(body.source);if(sources.some(s=>s.source_id===incoming.source_id&&s.namespace===incoming.namespace&&s.source_revision===incoming.source_revision&&s.file_hash===incoming.file_hash))return json(res,200,snapshot());
         // Append immutable versions; differing same-revision rows remain a conflict.
-        sources.push(incoming);version++;return json(res,200,snapshot());
+        sources.push(incoming);const row=incoming.rows.find(r=>!r.section_break);selected=row?canonical([incoming.namespace,incoming.source_id,incoming.file_hash,incoming.source_revision,row.locator]):null;version++;return json(res,200,snapshot());
       }
       if(url.pathname==='/api/review'){
         const p=snapshot().proposal;
@@ -38,7 +39,7 @@ export function createDesk(initialSources=[demo()]){
         const acknowledgement={acknowledgement_id:'export-'+(exports.length+1),kind:'LOCAL_JSON_DRAFT_EXPORT',draft_fingerprint:r.draft.draft_fingerprint,proposal_fingerprint:r.proposal_fingerprint,target_import_receipt:null};exports.push(acknowledgement);version++;return json(res,200,{...snapshot(),download:r.draft,export_acknowledgement:acknowledgement});
       }throw new Error('Unknown API action');
     }
-    const files={'/':'index.html','/app.mjs':'app.mjs','/style.css':'style.css'};if(req.method!=='GET'||!files[url.pathname])return json(res,404,{error:'NOT_FOUND'});
+    const files={'/':'source-desk.html','/source-desk':'source-desk.html','/source-desk/':'source-desk.html','/source-desk/source-app.mjs':'source-app.mjs','/source-desk/source-style.css':'source-style.css','/source-desk/base.css':'style.css'};if(req.method!=='GET'||!files[url.pathname])return json(res,404,{error:'NOT_FOUND'});
     const file=files[url.pathname];res.writeHead(200,{'Content-Type':file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.css')?'text/css; charset=utf-8':'text/javascript; charset=utf-8','Content-Security-Policy':"default-src 'self'; connect-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'",'Cache-Control':'no-store'});res.end(readFileSync(join(ROOT,file)));
   }catch(error){json(res,400,{error:'INVALID_INPUT_OR_REVIEW',message:error.message});}};
   return {handler,snapshot};

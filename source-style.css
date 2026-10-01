@@ -1,0 +1,2 @@
+@import url('/source-desk/base.css');
+header h1{margin:0;font-size:26px}header a{color:white}header a:focus-visible{outline:3px solid #ffbc67;outline-offset:3px}#source-cells td{white-space:pre-wrap}#source-binding{overflow-wrap:anywhere;font-size:14px}#source-rows button{color:#165b59}form p{margin:0;font-size:14px}code{overflow-wrap:anywhere}header a{font-size:14px}

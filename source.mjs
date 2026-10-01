@@ -21,7 +21,10 @@ export function jsonSpans(text){
 }
 export const REQUIRED=['row_id','equipment_id','organization','site','task_text','frequency','responsible_role'];
 export function importSource({source_id,namespace,source_revision,format,text}){
-  for(const [k,v] of Object.entries({source_id,namespace,source_revision}))if(typeof v!=='string'||!v.trim())fail('Missing source identity: '+k);
+  for(const [k,v] of Object.entries({source_id,namespace,source_revision})){
+    if(typeof v!=='string'||!v.trim())fail('Missing source identity: '+k);
+    if(v.length>128||/[\u0000-\u001f\u007f]/.test(v))fail('Source identity must be at most 128 characters without control characters: '+k);
+  }
   if(typeof text!=='string'||Buffer.byteLength(text)>1024*1024)fail('Source must be bounded UTF-8 text');
   const file_hash=hash(text),rows=[];
   const cell=(value,locator,span)=>{
